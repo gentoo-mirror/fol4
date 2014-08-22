@@ -16,7 +16,7 @@ LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux"
 
-IUSE="chardet nls"
+IUSE="chardet nls qt5"
 
 RDEPEND=">=dev-libs/dbus-glib-0.60
 	>=dev-libs/glib-2.28
@@ -24,9 +24,11 @@ RDEPEND=">=dev-libs/dbus-glib-0.60
 	>=x11-libs/cairo-1.2.6
 	>=x11-libs/pango-1.8.0
 	>=x11-libs/gtk+-2.24:2
-	dev-qt/qtcore:5
-	dev-qt/qtgui:5
-	dev-qt/qtwidgets:5"
+	qt5? (
+		dev-qt/qtcore:5
+		dev-qt/qtgui:5
+		dev-qt/qtwidgets:5
+	)"
 
 DEPEND="${RDEPEND}
 	virtual/pkgconfig
@@ -53,7 +55,7 @@ src_configure() {
 		--enable-dbus \
 		$(use_enable chardet) \
 		$(use_enable nls) \
-		--enable-qt
+		$(use_enable qt5 qt)
 }
 
 src_install() {

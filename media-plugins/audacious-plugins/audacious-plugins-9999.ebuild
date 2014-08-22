@@ -13,7 +13,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux"
 IUSE="aac adplug alsa bs2b cdda cue ffmpeg flac fluidsynth gnome jack
-lame libnotify libsamplerate lirc midi mms mp3 nls pulseaudio scrobbler sdl sid sndfile vorbis wavpack"
+lame libnotify libsamplerate lirc midi mms mp3 nls pulseaudio qt5 scrobbler sdl sid sndfile vorbis wavpack"
 
 RDEPEND="app-arch/unzip
 	>=dev-libs/dbus-glib-0.60
@@ -22,9 +22,11 @@ RDEPEND="app-arch/unzip
 	~media-sound/audacious-9999
 	>=net-libs/neon-0.26.4
 	>=x11-libs/gtk+-2.24:2
-	dev-qt/qtcore:5
-	dev-qt/qtgui:5
-	dev-qt/qtwidgets:5
+	qt5? (
+		dev-qt/qtcore:5
+		dev-qt/qtgui:5
+		dev-qt/qtwidgets:5
+	)
 	( || ( >=dev-libs/glib-2.32.2[utils] dev-util/gdbus-codegen ) )
 	aac? ( >=media-libs/faad2-2.7 )
 	adplug? ( >=dev-cpp/libbinio-1.4 )
@@ -106,8 +108,6 @@ src_configure() {
 		--enable-modplug \
 		--disable-soxr \
 		--enable-neon \
-		--enable-qt \
-		--enable-qtui \
 		$(use_enable adplug) \
 		$(use_enable aac) \
 		$(use_enable alsa) \
@@ -128,6 +128,8 @@ src_configure() {
 		$(use_enable midi amidiplug) \
 		$(use_enable nls) \
 		$(use_enable pulseaudio pulse) \
+		$(use_enable qt5 qt) \
+		$(use_enable qt5 qtui) \
 		$(use_enable scrobbler scrobbler2) \
 		$(use_enable sdl sdlout) \
 		$(use_enable sid) \
