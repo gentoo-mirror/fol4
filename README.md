@@ -1,15 +1,15 @@
-# b-overlay
-cat > /etc/layman/overlays/b-overlay.xml << EOF
-'<repositories version="1.0">
-  <repo quality="experimental" status="unofficial">
-    <name>b-overlay</name>
-    <description lang="en">Collection of custom ebuilds</description>
-    <homepage>https://github.com/madsl/b-overlay</homepage>
-    <owner type="person">
-      <email>mads@ab3.no</email>
-      <name>Mads</name>
-    </owner>
-    <source type="git">git://github.com/madsl/b-overlay.git</source>
-  </repo>
-</repositories>'
-EOF
+<pre># b-overlay
+cat &gt; /etc/layman/overlays/b-overlay.xml &lt;&lt; EOF
+'&lt;repositories version="1.0"&gt;
+  &lt;repo quality="experimental" status="unofficial"&gt;
+    &lt;name&gt;b-overlay&lt;/name&gt;
+    &lt;description lang="en"&gt;Collection of custom ebuilds&lt;/description&gt;
+    &lt;homepage&gt;https://github.com/madsl/b-overlay&lt;/homepage&gt;
+    &lt;owner type="person"&gt;
+      &lt;email&gt;mads@ab3.no&lt;/email&gt;
+      &lt;name&gt;Mads&lt;/name&gt;
+    &lt;/owner&gt;
+    &lt;source type="git"&gt;git://github.com/madsl/b-overlay.git&lt;/source&gt;
+  &lt;/repo&gt;
+&lt;/repositories&gt;'
+EOF</pre>
