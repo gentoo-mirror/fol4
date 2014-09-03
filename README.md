@@ -1,4 +1,4 @@
-<pre># b-overlay
+<pre># fol4 overlay
 cat &gt; /etc/layman/overlays/fol4.xml &lt;&lt; EOF
 '&lt;repositories version="1.0"&gt;
   &lt;repo quality="experimental" status="unofficial"&gt;
