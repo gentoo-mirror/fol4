@@ -29,6 +29,7 @@ RDEPEND="app-arch/unzip
 	x11-libs/pango[abi_x86_32]
 	x11-libs/pixman[abi_x86_32]
 	x11-libs/gtk+:2[abi_x86_32]
+	x11-libs/gdk-pixbuf[abi_x86_32]
 	x11-libs/atk[abi_x86_32]"
 
 QA_PRESTRIPPED=".*\.so
