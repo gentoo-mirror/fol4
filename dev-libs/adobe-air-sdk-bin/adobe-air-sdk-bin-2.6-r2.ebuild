@@ -18,6 +18,7 @@ RESTRICT="mirror"
 
 RDEPEND="app-arch/unzip
 	dev-libs/libxml2[abi_x86_32]
+	dev-libs/libxslt[abi_x86_32]
 	media-libs/alsa-lib[abi_x86_32]
 	dev-libs/nspr[abi_x86_32]
 	dev-libs/nss[abi_x86_32]
@@ -25,7 +26,10 @@ RDEPEND="app-arch/unzip
 	net-misc/curl[abi_x86_32]
 	www-plugins/adobe-flash
 	x11-libs/cairo[abi_x86_32]
-	x11-libs/gtk+[abi_x86_32]"
+	x11-libs/pango[abi_x86_32]
+	x11-libs/pixman[abi_x86_32]
+	x11-libs/gtk+:2[abi_x86_32]
+	x11-libs/atk[abi_x86_32]"
 
 QA_PRESTRIPPED=".*\.so
 	/opt/Adobe/AirSDK/bin/adl"
