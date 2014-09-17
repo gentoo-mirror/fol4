@@ -3,7 +3,7 @@
 
 EAPI=5
 
-inherit eutils multilib pam user versionator flag-o-matic systemd toolchain-funcs
+inherit autotools eutils multilib pam user versionator flag-o-matic systemd toolchain-funcs
 
 MY_PV="$(replace_version_separator 3 '-')"
 MY_P="${PN}-${MY_PV}"
