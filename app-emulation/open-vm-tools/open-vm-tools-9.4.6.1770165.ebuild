@@ -17,6 +17,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="X doc icu modules pam +pic xinerama"
 
+RESTRICT="mirror"
+
 COMMON_DEPEND="
 	dev-libs/glib:2
 	dev-libs/libdnet
@@ -56,10 +58,13 @@ pkg_setup() {
 }
 
 src_prepare() {
+	EPATCH_SOURCE="${FILESDIR}" EPATCH_SUFFIX="patch" \
+		EPATCH_FORCE="yes" epatch
 	# Do not filter out Werror
 	# Upstream Bug  http://sourceforge.net/tracker/?func=detail&aid=2959749&group_id=204462&atid=989708
 	# sed -i -e 's/CFLAGS=.*Werror/#&/g' configure || die "sed comment out Werror failed"
 	sed -i -e 's:\(TEST_PLUGIN_INSTALLDIR=\).*:\1\$libdir/open-vm-tools/plugins/tests:g' configure || die "sed test_plugin_installdir failed"
+
 }
 
 src_configure() {

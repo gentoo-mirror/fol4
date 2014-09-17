@@ -18,6 +18,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="vmhgfs"
 
+RESTRICT="mirror"
+
 S="${WORKDIR}/${MY_P}"
 
 pkg_setup() {
@@ -51,7 +53,7 @@ pkg_setup() {
 
 src_prepare() {
 	EPATCH_SOURCE="${FILESDIR}" EPATCH_SUFFIX="patch" \
-        EPATCH_FORCE="yes" epatch
+		EPATCH_FORCE="yes" epatch
 	epatch_user
 }
 
