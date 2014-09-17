@@ -50,7 +50,7 @@ pkg_setup() {
 }
 
 src_prepare() {
-	epatch "${FILESDIR}"
+	epatch "${FILESDIR}/*"
 	epatch_user
 }
 
