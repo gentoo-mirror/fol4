@@ -60,6 +60,8 @@ pkg_setup() {
 src_prepare() {
 	EPATCH_SOURCE="${FILESDIR}" EPATCH_SUFFIX="patch" \
 		EPATCH_FORCE="yes" epatch
+	eautoreconf
+
 	# Do not filter out Werror
 	# Upstream Bug  http://sourceforge.net/tracker/?func=detail&aid=2959749&group_id=204462&atid=989708
 	# sed -i -e 's/CFLAGS=.*Werror/#&/g' configure || die "sed comment out Werror failed"
