@@ -60,7 +60,7 @@ DEPEND="${RDEPEND}
 	nls? ( dev-util/intltool )
 	virtual/pkgconfig"
 
-DOCS="AUTHORS"
+# DOCS="AUTHORS"
 
 mp3_warning() {
 	if ! use mp3 ; then
