@@ -24,7 +24,6 @@ RDEPEND="app-arch/unzip
 	dev-libs/nss[abi_x86_32]
 	media-libs/libpng[abi_x86_32]
 	net-misc/curl[abi_x86_32]
-	www-plugins/adobe-flash
 	x11-libs/cairo[abi_x86_32]
 	x11-libs/pango[abi_x86_32]
 	x11-libs/pixman[abi_x86_32]
