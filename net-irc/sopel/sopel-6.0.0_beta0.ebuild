@@ -27,4 +27,5 @@ RDEPEND="dev-python/feedparser[${PYTHON_USEDEP}]
 		dev-python/lxml[${PYTHON_USEDEP}]
 		dev-python/pyenchant[${PYTHON_USEDEP}]
 		dev-python/pygeoip[${PYTHON_USEDEP}]
+		dev-python/praw[${PYTHON_USEDEP}]
 		$(python_gen_cond_dep 'dev-python/backports-ssl-match-hostname[${PYTHON_USEDEP}]' python2_7)"
