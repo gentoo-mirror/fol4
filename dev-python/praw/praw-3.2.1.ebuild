@@ -14,7 +14,7 @@ EGIT_COMMIT="v${PV}"
 RDEPEND="dev-python/decorator[${PYTHON_USEDEP}]
 		python_targets_python2_7? ( dev-python/six )
 		dev-python/requests[${PYTHON_USEDEP}]"
-LICENSE="GPLv3"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
