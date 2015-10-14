@@ -9,8 +9,8 @@ inherit distutils-r1
 
 if [[ ${PV} == "9999" ]] ; then
 	inherit git-2
-	EGIT_BRANCH="feature_asyncio_python3"
-	EGIT_REPO_URI="git://github.com/moltob/${PN}.git"
+	EGIT_BRANCH="master"
+	EGIT_REPO_URI="git://github.com/madsl/${PN}.git"
 	SRC_URI=""
 else
 	SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
