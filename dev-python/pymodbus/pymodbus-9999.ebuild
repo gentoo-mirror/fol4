@@ -3,21 +3,21 @@
 # $Header: $
 
 EAPI="5"
-PYTHON_COMPAT=( python{2_6,2_7} )
+PYTHON_COMPAT=( python{2_6,2_7,3_4} )
 
 inherit eutils distutils-r1
 
 if [[ ${PV} == "9999" ]] ; then
 	inherit git-2
-	EGIT_BRANCH="master"
-	EGIT_REPO_URI="git://github.com/bashwork/${PN}.git"
+	EGIT_BRANCH="python3"
+	EGIT_REPO_URI="git://github.com/moltob/${PN}.git"
 	SRC_URI=""
 else
 	SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 fi
 
 DESCRIPTION="A Modbus protocol stack in Python"
-HOMEPAGE="https://github.com/jiffyclub/ipythonblocks/"
+HOMEPAGE="https://github.com/bashwork/pymodbus"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
