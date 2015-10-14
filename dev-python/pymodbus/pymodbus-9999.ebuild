@@ -9,7 +9,7 @@ inherit eutils distutils-r1
 
 if [[ ${PV} == "9999" ]] ; then
 	inherit git-2
-	EGIT_BRANCH="python3"
+	EGIT_BRANCH="feature_asyncio_python3"
 	EGIT_REPO_URI="git://github.com/moltob/${PN}.git"
 	SRC_URI=""
 else
