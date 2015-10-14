@@ -5,7 +5,7 @@
 EAPI="5"
 PYTHON_COMPAT=( python{2_6,2_7,3_4} )
 
-inherit eutils distutils-r1
+inherit distutils-r1
 
 if [[ ${PV} == "9999" ]] ; then
 	inherit git-2
@@ -22,6 +22,11 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE="doc serial test"
+
+src_prepare() {
+	rm "${S}/ez_setup.py"
+	distutils-r1_src_prepare
+}
 
 RDEPEND="dev-python/setuptools
 	dev-python/twisted-core[serial?]
