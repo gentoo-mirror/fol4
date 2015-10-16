@@ -21,8 +21,8 @@ done
 
 RDEPEND="net-print/cups
 		dev-libs/gmp
-		dev-libs/nettle:0/4
-		dev-libs/libtasn1:0/6
+		dev-libs/nettle
+		dev-libs/libtasn1
 		sys-libs/zlib
 		net-libs/gnutls"
 
