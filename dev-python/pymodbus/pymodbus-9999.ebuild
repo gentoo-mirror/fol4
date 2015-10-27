@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI="5"
-PYTHON_COMPAT=( python{2_6,2_7,3_4} )
+PYTHON_COMPAT=( python{2_6,2_7,3_4,3_5} )
 
 inherit distutils-r1
 
@@ -22,11 +22,6 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE="doc serial test"
-
-src_prepare() {
-	rm "${S}/ez_setup.py"
-	distutils-r1_src_prepare
-}
 
 RDEPEND="dev-python/setuptools
 	dev-python/twisted-core[serial?]
