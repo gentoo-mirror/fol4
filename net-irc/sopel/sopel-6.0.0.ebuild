@@ -10,11 +10,11 @@ inherit distutils-r1 git-r3 versionator
 DESCRIPTION="An easy-to-use and highly extensible IRC Bot framework"
 HOMEPAGE="http://sopel.chat/"
 
-MY_PV="$(delete_version_separator 3)"
-MY_PV="${MY_PV/beta/b}"
+# MY_PV="$(delete_version_separator 3)"
+# MY_PV="${MY_PV/beta/b}"
 
 EGIT_REPO_URI="https://github.com/sopel-irc/sopel.git"
-EGIT_COMMIT="${MY_PV}"
+EGIT_COMMIT="${PV}"
 
 LICENSE="EFL-2"
 SLOT="0"
