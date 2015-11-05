@@ -36,6 +36,8 @@ QA_PRESTRIPPED=".*\.so
 	/opt/Adobe/AirSDK/bin/adl"
 QA_EXECSTACK="*/libCore.so"
 
+S="${WORKDIR}"
+
 src_install() {
 	local sdkdir=opt/Adobe/AirSDK
 	local rtdir='runtimes/air/linux/Adobe AIR/Versions/1.0'
