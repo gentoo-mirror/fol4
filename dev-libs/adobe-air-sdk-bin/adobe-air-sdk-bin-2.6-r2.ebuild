@@ -17,7 +17,7 @@ IUSE=""
 RESTRICT="mirror"
 
 RDEPEND="app-arch/unzip
-	sys-libs/ncurses:5[abi_x86_32]
+	sys-libs/ncurses:5/5[abi_x86_32]
 	dev-libs/libxml2[abi_x86_32]
 	dev-libs/libxslt[abi_x86_32]
 	media-libs/alsa-lib[abi_x86_32]
