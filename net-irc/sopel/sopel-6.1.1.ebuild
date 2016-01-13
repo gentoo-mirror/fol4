@@ -30,4 +30,5 @@ RDEPEND="dev-python/feedparser[${PYTHON_USEDEP}]
 		dev-python/praw[${PYTHON_USEDEP}]
 		dev-python/update-checker[${PYTHON_USEDEP}]
 		dev-python/ipython[${PYTHON_USEDEP}]
+		dev-python/xmltodict[${PYTHON_USEDEP}]
 		$(python_gen_cond_dep 'dev-python/backports-ssl-match-hostname[${PYTHON_USEDEP}]' python2_7)"
