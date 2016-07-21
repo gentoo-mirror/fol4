@@ -30,7 +30,7 @@ python_configure_all() {
 }
 
 src_prepare() {
-	distutils_src_prepare
+	distutils-r1_src_prepare
 
 	# Require not setuptools-git.
 	sed -e "/setup_requires=\['setuptools_git'\]/d" -i setup.py
