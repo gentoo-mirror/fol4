@@ -25,8 +25,18 @@ DEPEND="${RDEPEND}
 
 DOCS="ChangeLog"
 
-python_configure_all() {
-	append-cxxflags -fno-strict-aliasing
+python_compile() {
+	if ! python_is_python3; then
+		local CFLAGS="${CFLAGS}"
+		local CXXFLAGS="${CXXFLAGS}"
+		append-flags -fno-strict-aliasing
+	fi
+
+	# Python gets confused when it is in sys.path before build.
+	local PYTHONPATH=
+	export PYTHONPATH
+
+	distutils-r1_python_compile
 }
 
 src_prepare() {
