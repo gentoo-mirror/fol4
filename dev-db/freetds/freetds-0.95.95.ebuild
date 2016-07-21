@@ -13,7 +13,7 @@ SRC_URI="ftp://ftp.freetds.org/pub/freetds/stable/${P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~ppc-macos"
-IUSE="kerberos odbc iodbc mssql"
+IUSE="debug kerberos odbc iodbc mssql"
 RESTRICT="test mirror"
 
 DEPEND="
@@ -32,11 +32,16 @@ src_prepare() {
 src_configure() {
 	local myconf="$(use_enable mssql msdblib)"
 
+	if ! use debug; then
+		myconf="${myconf} --disable-debug"
+	fi
+
 	if use iodbc ; then
 		myconf="${myconf} --enable-odbc --with-iodbc=${EPREFIX}/usr"
 	elif use odbc ; then
 		myconf="${myconf} --enable-odbc --with-unixodbc=${EPREFIX}/usr"
 	fi
+
 	if use kerberos ; then
 		myconf="${myconf} --enable-krb5"
 	fi
