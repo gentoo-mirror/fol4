@@ -27,6 +27,8 @@ src_prepare() {
 	sed -ie 's:with_iodbc/include":with_iodbc/include/iodbc":' configure.ac || die
 	# epatch ${FILESDIR}/freetds-0.91-fix_field_aliases.patch
 	eautoreconf
+	epatch ${FILESDIR}/freetds-0.95.95-fix_include_freetds_tds.patch
+	epatch ${FILESDIR}/freetds-0.95.95-fix_src_tds_threadsafe.patch
 }
 
 src_configure() {
