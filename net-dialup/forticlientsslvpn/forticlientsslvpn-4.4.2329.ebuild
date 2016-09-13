@@ -50,7 +50,7 @@ src_install() {
 	mkdir -p ${D}/usr/share/applications/
 	mkdir -p ${D}/usr/bin/
 	cp -v ${FILESDIR}/forticlientsslvpn.desktop ${D}/usr/share/applications/
-	cp -v ${FILESDIR}/forticlientsslvpn_cli.sh ${D}/usr/bin/
+	cp -v ${FILESDIR}/forticlientsslvpn ${D}/usr/bin/
 	mkdir -v ${D}/opt/forticlientsslvpn/{32,64}bit
 	cp -vr 32bit/helper ${D}/opt/forticlientsslvpn/32bit/
 	cp -vr 64bit/helper ${D}/opt/forticlientsslvpn/64bit/
