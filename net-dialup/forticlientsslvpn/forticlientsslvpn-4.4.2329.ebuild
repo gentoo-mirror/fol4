@@ -18,7 +18,8 @@ RDEPEND="${DEPEND}
 	net-dialup/ppp"
 
 S="${WORKDIR}/forticlientsslvpn"
-QA_PREBUILT="opt/forticlientsslvpn/forticlientsslvpn
+QA_PREBUILT="opt/forticlientsslvpn/32bit/forticlientsslvpn
+			 opt/forticlientsslvpn/64bit/forticlientsslvpn
 			 opt/forticlientsslvpn/32bit/helper/subproc
 			 opt/forticlientsslvpn/64bit/helper/subproc
 			 opt/forticlientsslvpn/32bit/helper/showlicense
@@ -40,7 +41,9 @@ src_compile() {
 src_install() {
 	exeinto opt/forticlientsslvpn
 	doexe fortisslvpn.sh
+	exeinto opt/forticlientsslvpn/32bit
 	doexe 32bit/forticlientsslvpn
+	exeinto opt/forticlientsslvpn/64bit
 	doexe 64bit/forticlientsslvpn
 	mkdir -vp ${D}/opt/forticlientsslvpn/icons/
 	cp -v ${FILESDIR}/forticlientsslvpn.png ${D}/opt/forticlientsslvpn/icons/
