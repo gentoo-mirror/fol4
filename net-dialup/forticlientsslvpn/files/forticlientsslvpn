@@ -1,0 +1,3 @@
+#! /bin/sh
+cd /opt/forticlientsslvpn/
+exec "/opt/forticlientsslvpn/fortisslvpn.sh" "$@"

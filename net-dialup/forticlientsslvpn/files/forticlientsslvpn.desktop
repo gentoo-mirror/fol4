@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=FortiClient SSLVPN
 Comment=FortiClient SSLVPN for Linux
-Exec=/opt/forticlientsslvpn/fortisslvpn.sh
+Exec=forticlientsslvpn
 Icon=/opt/forticlientsslvpn/icons/forticlientsslvpn.png
 StartupNotify=false
 Terminal=false
