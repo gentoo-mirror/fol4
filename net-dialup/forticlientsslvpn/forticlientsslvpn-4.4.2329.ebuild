@@ -1,6 +1,5 @@
-# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# Based on https://aur.archlinux.org/packages/forticlientsslvpn/
 
 EAPI=5
 DESCRIPTION="SSL VPN Client for Fortinet"
@@ -61,10 +60,10 @@ src_install() {
 pkg_postinst() {
 	ewarn "Forticlient SSL VPN is closed-source."
 	einfo "Installed in /opt/forticlientsslvpn"
-    einfo ""
-    einfo "if your vpn isn't signed from a official CA you have to set"
-    einfo "    invalid_peer_cert_action=0"
-    einfo "in /opt/forticlientsslvpn/helper/config"
+	einfo ""
+	einfo "if your vpn isn't signed from a official CA you have to set"
+	einfo "	invalid_peer_cert_action=0"
+	einfo "in /opt/forticlientsslvpn/helper/config"
 }
 
 
