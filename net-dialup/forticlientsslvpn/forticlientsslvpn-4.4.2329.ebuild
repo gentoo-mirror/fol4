@@ -8,7 +8,7 @@ SRC_URI="https://github.com/mcereda/forticlientsslvpn/raw/master/tarball/forticl
 LICENSE="FortiClientSSLVPN"
 SLOT="0"
 IUSE=""
-KEYWORDS="~amd64"
+KEYWORDS="~x86 ~amd64"
 DEPEND=""
 RDEPEND="${DEPEND}
 	sys-apps/net-tools
@@ -63,7 +63,7 @@ pkg_postinst() {
 	einfo ""
 	einfo "if your vpn isn't signed from a official CA you have to set"
 	einfo "	invalid_peer_cert_action=0"
-	einfo "in /opt/forticlientsslvpn/helper/config"
+	einfo "in /opt/forticlientsslvpn/{32,64}bit/helper/config"
 }
 
 
