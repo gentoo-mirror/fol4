@@ -11,6 +11,8 @@ HOMEPAGE="https://pypi.python.org/pypi/holidays"
 EGIT_REPO_URI="https://github.com/ryanss/python-holidays.git"
 EGIT_COMMIT="v${PV}"
 
+DEPEND="dev-python/python-dateutil[${PYTHON_USEDEP}]"
+
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
