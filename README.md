@@ -1,10 +1,6 @@
 fol4 overlay
 ------------
-Contains mostly random multilib ebuilds.
-
-* Adobe AIR 2.6 with multilib support
-* qtserialport-5.3.1 with qt4 multilib support (this needs eclass files from Gentoo qt-overlay)
-* audacious{,-plugins}-9999 with gtk2 support and qt5 use flag
+Contains ebuilds not found elsewhere.
 
 <pre>cat &gt; /etc/layman/overlays/fol4.xml &lt;&lt; EOF
 &lt;repositories version="1.0"&gt;
