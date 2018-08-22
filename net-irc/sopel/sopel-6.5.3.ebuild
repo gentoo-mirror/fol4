@@ -14,7 +14,7 @@ HOMEPAGE="http://sopel.chat/"
 # MY_PV="${MY_PV/beta/b}"
 
 EGIT_REPO_URI="https://github.com/sopel-irc/sopel.git"
-EGIT_COMMIT="${PV}"
+EGIT_COMMIT="v${PV}"
 
 LICENSE="EFL-2"
 SLOT="0"
