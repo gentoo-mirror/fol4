@@ -7,12 +7,12 @@ Contains ebuilds not found elsewhere.
   &lt;repo quality="experimental" status="unofficial"&gt;
     &lt;name&gt;fol4&lt;/name&gt;
     &lt;description lang="en"&gt;Collection of custom ebuilds&lt;/description&gt;
-    &lt;homepage&gt;https://github.com/madsl/fol4&lt;/homepage&gt;
+    &lt;homepage&gt;https://gitlab.com/madsl/fol4&lt;/homepage&gt;
     &lt;owner type="person"&gt;
       &lt;email&gt;mads@ab3.no&lt;/email&gt;
       &lt;name&gt;Mads&lt;/name&gt;
     &lt;/owner&gt;
-    &lt;source type="git"&gt;git://github.com/madsl/fol4.git&lt;/source&gt;
+    &lt;source type="git"&gt;https://gitlab.com/madsl/fol4.git&lt;/source&gt;
   &lt;/repo&gt;
 &lt;/repositories&gt;
 EOF</pre>
