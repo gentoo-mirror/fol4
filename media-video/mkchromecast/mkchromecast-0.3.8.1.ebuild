@@ -24,14 +24,39 @@ RDEPEND="	gstreamer? ( media-libs/gstreamer )
 
 DEPEND="${RDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
+	dev-python/pychromecast[${PYTHON_USEDEP}]
 	media-libs/mutagen[${PYTHON_USEDEP}]
 	dev-python/flask[${PYTHON_USEDEP}]
 	dev-python/netifaces[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
+	dev-python/psutil[${PYTHON_USEDEP}]
+	dev-python/protobuf-python[${PYTHON_USEDEP}]
+	dev-python/zeroconf[${PYTHON_USEDEP}]
 	media-sound/sox
 	media-libs/flac
 	media-libs/faac
+	media-video/ffmpeg
 	media-sound/lame
 	qt5? ( dev-python/PyQt5[${PYTHON_USEDEP}] )
 	"
 
+src_install() {
+	exeinto /usr/share/${PN} 
+	doexe ${PN}.py
+	dosym /usr/share/${PN}/${PN}.py ${EPREFIX}/usr/bin/${PN}
+	insinto /usr/share/${PN}/${PN}
+	doins mkchromecast/*.py
+	insinto /usr/share/${PN}/${PN}/getch
+	doins mkchromecast/getch/*
+	insinto /usr/share/${PN}/images
+	doins images/*.png
+	insinto /usr/share/${PN}/nodejs
+	doins nodejs/html5-video-streamer.js
+
+	doman man/${PN}.1
+	dodoc LICENSE
+	insinto /usr/share/pixmaps/${PN}
+	doins images/${PN}.xpm
+	insinto /usr/share/applications/
+	doins ${PN}.desktop
+}
