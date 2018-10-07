@@ -28,10 +28,7 @@ DEPEND="${RDEPEND}
 	media-libs/mutagen[${PYTHON_USEDEP}]
 	dev-python/flask[${PYTHON_USEDEP}]
 	dev-python/netifaces[${PYTHON_USEDEP}]
-	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/psutil[${PYTHON_USEDEP}]
-	dev-python/protobuf-python[${PYTHON_USEDEP}]
-	dev-python/zeroconf[${PYTHON_USEDEP}]
 	media-sound/sox
 	media-libs/flac
 	media-libs/faac
