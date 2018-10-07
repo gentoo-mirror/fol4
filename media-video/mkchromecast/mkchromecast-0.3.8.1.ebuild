@@ -1,0 +1,37 @@
+# Copyright 1999-2018 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=6
+
+PYTHON_COMPAT=( python3_{4,5,6,7} )
+
+inherit distutils-r1
+
+DESCRIPTION="Cast Audio/Video to your Google Cast and Sonos Devices"
+HOMEPAGE="http://mkchromecast.com"
+
+LICENSE="MIT"
+SLOT="0"
+SRC_URI="https://github.com/muammar/mkchromecast/archive/${PV}.tar.gz"
+KEYWORDS="~amd64 ~x86"
+IUSE="alsa ffmpeg gstreamer nodejs +pulseaudio qt5 youtube-dl"
+
+RDEPEND="	gstreamer? ( media-libs/gstreamer )
+			pulseaudio? ( media-sound/pulseaudio )
+			alsa? ( media-sound/alsa-utils )
+			youtube-dl? ( net-misc/youtube-dl[${PYTHON_USEDEP}] )
+			nodejs? ( net-libs/nodejs )"
+
+DEPEND="${RDEPEND}
+	dev-python/setuptools[${PYTHON_USEDEP}]
+	media-libs/mutagen[${PYTHON_USEDEP}]
+	dev-python/flask[${PYTHON_USEDEP}]
+	dev-python/netifaces[${PYTHON_USEDEP}]
+	dev-python/requests[${PYTHON_USEDEP}]
+	media-sound/sox
+	media-libs/flac
+	media-libs/faac
+	media-sound/lame
+	qt5? ( dev-python/PyQt5[${PYTHON_USEDEP}] )
+	"
+
