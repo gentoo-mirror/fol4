@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm
+DESCRIPTION=Adobe AIR SDK
+EAPI=5
+HOMEPAGE=http://www.adobe.com/products/air/tools/sdk/
+KEYWORDS=~amd64 ~x86
+LICENSE=AdobeAirSDK
+RDEPEND=app-arch/unzip sys-libs/ncurses:5/5[abi_x86_32] dev-libs/libxml2[abi_x86_32] dev-libs/libxslt[abi_x86_32] media-libs/alsa-lib[abi_x86_32] dev-libs/nspr[abi_x86_32] dev-libs/nss[abi_x86_32] media-libs/libpng[abi_x86_32] net-misc/curl[abi_x86_32] x11-libs/cairo[abi_x86_32] x11-libs/pango[abi_x86_32] x11-libs/pixman[abi_x86_32] x11-libs/gtk+:2[abi_x86_32] x11-libs/gdk-pixbuf[abi_x86_32] dev-libs/atk[abi_x86_32]
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRSDK.tbz2 -> AdobeAIRSDK-2.6.tbz2
+_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	fdo-mime	995b19d3f30e956b4e1bc5a91fdc4ea7	ltprune	08f9e1d9ee0af8f5d9a7854efbcd8c0e	multilib	b2f01ad412baf81650c23fcf0975fa33	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf
+_md5_=00f0b27572d4de363a01c6e7024c3bd9
