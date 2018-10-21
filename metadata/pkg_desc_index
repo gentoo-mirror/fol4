@@ -1,4 +1,5 @@
 dev-perl/Email-Outlook-Message 0.919: Read Outlook .msg files
 dev-python/paho-mqtt 1.3.1: A client class with support for both MQTT v3.1 and v3.1.1 on Python 2.7 or 3.x.
 net-libs/meanwhile 1.1.1: Meanwhile (Sametime protocol) library
+sys-apps/v86d 0.1.10-r1: A daemon to run x86 code in an emulated environment
 x11-misc/twofing 0.1.2: twofing is a daemon which runs in the background and recognizes two-finger gestures performed on a touchscreen and converts them into mouse and keyboard events.
