@@ -199,7 +199,6 @@ src_prepare() {
 			"${FILESDIR}/0020-distinguish-XSI-compliant-strerror_r-from-GNU-specif.patch"
 			"${FILESDIR}/0021-Hide-__start_BUS_ERROR_MAP-and-__stop_BUS_ERROR_MAP.patch"
 			"${FILESDIR}/0022-build-sys-Detect-whether-struct-statx-is-defined-in-.patch"
-			"${FILESDIR}/0023-resolvconf-fixes-for-the-compatibility-interface.patch"
 		)
 	fi
 
