@@ -349,15 +349,13 @@ multilib_src_install_all() {
 
 	einstalldocs
 
-	rm -f "${ED%/}${rootprefix}"/sbin/resolvconf || die
-
 	if ! use sysv-utils; then
 		rm "${ED%/}${rootprefix}"/sbin/{halt,init,poweroff,reboot,runlevel,shutdown,telinit} || die
 		rm "${ED%/}"/usr/share/man/man1/init.1 || die
 		rm "${ED%/}"/usr/share/man/man8/{halt,poweroff,reboot,runlevel,shutdown,telinit}.8 || die
 	fi
 
-	if ! use resolvconf && ! use sysv-utils; then
+	if ! use sysv-utils; then
 		rmdir "${ED%/}${rootprefix}"/sbin || die
 	fi
 
