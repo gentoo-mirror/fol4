@@ -70,7 +70,6 @@ RDEPEND="${COMMON_DEPEND}
 		sys-process/procps[kill(+)]
 		sys-apps/coreutils[kill(-)]
 	) )
-	!sys-auth/nss-myhostname
 	!<sys-kernel/dracut-044
 	!sys-fs/eudev
 	!sys-fs/udev"
@@ -298,6 +297,9 @@ multilib_src_configure() {
 		-Dldconfig=$(meson_multilib)
 		-Dlocaled=false
 		-Dgshadow=false
+		-Dmyhostname=false
+		-Dmymachines=false
+		-Dresolve=false
 		-Dman=$(meson_multilib)
 		-Dnetworkd=$(meson_multilib)
 		-Dquotacheck=$(meson_multilib)
@@ -346,7 +348,6 @@ multilib_src_install_all() {
 	mv "${ED%/}"/usr/share/doc/{systemd,${PF}} || die
 
 	einstalldocs
-	dodoc "${FILESDIR}"/nsswitch.conf
 
 	rm -f "${ED%/}${rootprefix}"/sbin/resolvconf || die
 
