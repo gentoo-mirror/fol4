@@ -276,6 +276,7 @@ multilib_src_configure() {
 		-Dseccomp=$(meson_multilib_native_use seccomp)
 		-Dselinux=false
 		-Dsmack=false
+		-Dportabled=false
 		#-Dtests=$(meson_multilib_native_use test)
 		-Ddbus=$(meson_multilib_native_use test)
 		-Dxkbcommon=$(meson_multilib_native_use xkb)
