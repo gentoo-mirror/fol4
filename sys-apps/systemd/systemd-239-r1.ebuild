@@ -70,7 +70,6 @@ RDEPEND="${COMMON_DEPEND}
 		sys-process/procps[kill(+)]
 		sys-apps/coreutils[kill(-)]
 	) )
-	!sys-auth/nss-myhostname
 	!<sys-kernel/dracut-044
 	!sys-fs/eudev
 	!sys-fs/udev"
@@ -171,7 +170,6 @@ src_prepare() {
 			"${FILESDIR}/0001-sd-bus-make-BUS_DEFAULT_TIMEOUT-configurable.patch"
 			"${FILESDIR}/0001-Use-getenv-when-secure-versions-are-not-available.patch"
 			"${FILESDIR}/0002-don-t-use-glibc-specific-qsort_r.patch"
-			"${FILESDIR}/0002-use-lnr-wrapper-instead-of-looking-for-relative-opti.patch"
 			"${FILESDIR}/0003-comparison_fn_t-is-glibc-specific-use-raw-signature-.patch"
 			"${FILESDIR}/0003-implment-systemd-sysv-install-for-OE.patch"
 			"${FILESDIR}/0004-add-fallback-parse_printf_format-implementation.patch"
@@ -199,7 +197,6 @@ src_prepare() {
 			"${FILESDIR}/0020-distinguish-XSI-compliant-strerror_r-from-GNU-specif.patch"
 			"${FILESDIR}/0021-Hide-__start_BUS_ERROR_MAP-and-__stop_BUS_ERROR_MAP.patch"
 			"${FILESDIR}/0022-build-sys-Detect-whether-struct-statx-is-defined-in-.patch"
-			"${FILESDIR}/0023-resolvconf-fixes-for-the-compatibility-interface.patch"
 		)
 	fi
 
@@ -278,6 +275,7 @@ multilib_src_configure() {
 		-Dseccomp=$(meson_multilib_native_use seccomp)
 		-Dselinux=false
 		-Dsmack=false
+		-Dportabled=false
 		#-Dtests=$(meson_multilib_native_use test)
 		-Ddbus=$(meson_multilib_native_use test)
 		-Dxkbcommon=$(meson_multilib_native_use xkb)
@@ -299,6 +297,9 @@ multilib_src_configure() {
 		-Dldconfig=$(meson_multilib)
 		-Dlocaled=false
 		-Dgshadow=false
+		-Dmyhostname=false
+		-Dmymachines=false
+		-Dresolve=false
 		-Dman=$(meson_multilib)
 		-Dnetworkd=$(meson_multilib)
 		-Dquotacheck=$(meson_multilib)
@@ -347,9 +348,6 @@ multilib_src_install_all() {
 	mv "${ED%/}"/usr/share/doc/{systemd,${PF}} || die
 
 	einstalldocs
-	dodoc "${FILESDIR}"/nsswitch.conf
-
-	rm -f "${ED%/}${rootprefix}"/sbin/resolvconf || die
 
 	if ! use sysv-utils; then
 		rm "${ED%/}${rootprefix}"/sbin/{halt,init,poweroff,reboot,runlevel,shutdown,telinit} || die
@@ -357,7 +355,7 @@ multilib_src_install_all() {
 		rm "${ED%/}"/usr/share/man/man8/{halt,poweroff,reboot,runlevel,shutdown,telinit}.8 || die
 	fi
 
-	if ! use resolvconf && ! use sysv-utils; then
+	if ! use sysv-utils; then
 		rmdir "${ED%/}${rootprefix}"/sbin || die
 	fi
 
