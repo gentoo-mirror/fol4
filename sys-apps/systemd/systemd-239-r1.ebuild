@@ -170,7 +170,6 @@ src_prepare() {
 			"${FILESDIR}/0001-sd-bus-make-BUS_DEFAULT_TIMEOUT-configurable.patch"
 			"${FILESDIR}/0001-Use-getenv-when-secure-versions-are-not-available.patch"
 			"${FILESDIR}/0002-don-t-use-glibc-specific-qsort_r.patch"
-			"${FILESDIR}/0002-use-lnr-wrapper-instead-of-looking-for-relative-opti.patch"
 			"${FILESDIR}/0003-comparison_fn_t-is-glibc-specific-use-raw-signature-.patch"
 			"${FILESDIR}/0003-implment-systemd-sysv-install-for-OE.patch"
 			"${FILESDIR}/0004-add-fallback-parse_printf_format-implementation.patch"
