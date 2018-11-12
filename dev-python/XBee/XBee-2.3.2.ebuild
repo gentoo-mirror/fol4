@@ -16,7 +16,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="+tornado"
 
 DEPEND="dev-python/pyserial[${PYTHON_USEDEP}]"
-RDEPEND="tornado? ( dev-python/tornado[${PYTHON_USEDEP}] )"
+RDEPEND="tornado? ( www-servers/tornado[${PYTHON_USEDEP}] )"
 
 
 
