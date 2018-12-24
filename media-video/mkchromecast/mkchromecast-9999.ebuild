@@ -45,23 +45,3 @@ DEPEND="${RDEPEND}
 	qt5? ( dev-python/PyQt5[${PYTHON_USEDEP}] )
 	"
 
-src_install() {
-	exeinto /usr/share/${PN} 
-	doexe ${PN}.py
-	dosym /usr/share/${PN}/${PN}.py ${EPREFIX}/usr/bin/${PN}
-	insinto /usr/share/${PN}/${PN}
-	doins mkchromecast/*.py
-	insinto /usr/share/${PN}/${PN}/getch
-	doins mkchromecast/getch/*
-	insinto /usr/share/${PN}/images
-	doins images/*.png
-	insinto /usr/share/${PN}/nodejs
-	doins nodejs/html5-video-streamer.js
-
-	doman man/${PN}.1
-	dodoc LICENSE
-	insinto /usr/share/pixmaps/${PN}
-	doins images/${PN}.xpm
-	insinto /usr/share/applications/
-	doins ${PN}.desktop
-}
