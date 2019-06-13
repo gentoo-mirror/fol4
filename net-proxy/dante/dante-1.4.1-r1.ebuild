@@ -40,14 +40,7 @@ PATCHES=(
 )
 
 src_prepare() {
-	default
-
-	sed -i \
-		-e 's:/etc/socks\.conf:"${EPREFIX}"/etc/socks/socks.conf:' \
-		-e 's:/etc/sockd\.conf:"${EPREFIX}"/etc/socks/sockd.conf:' \
-		doc/{socksify.1,socks.conf.5,sockd.conf.5,sockd.8} \
-		|| die
-
+	eapply_user
 	sed -i -e 's:AM_CONFIG_HEADER:AC_CONFIG_HEADERS:' configure.ac || die
 
 	eautoreconf
@@ -55,12 +48,13 @@ src_prepare() {
 }
 
 multilib_src_configure() {
+	ECONF_SOURCE=${S} 
 	# hardcoded the libc name otherwise the scan on a amd64 multilib system
 	# ends up finding /usr/lib32/libc.so.5. That cascades and causes the
 	# preload/libdsocks to not be built.
 	econf \
-		--with-socks-conf="${EPREFIX}"/etc/socks/socks.conf \
-		--with-sockd-conf="${EPREFIX}"/etc/socks/sockd.conf \
+		--with-socks-conf="/etc/socks/socks.conf" \
+		--with-sockd-conf="/etc/socks/sockd.conf" \
 		--enable-preload \
 		--enable-clientdl \
 		--enable-serverdl \
