@@ -7,6 +7,7 @@ inherit linux-info systemd user
 DESCRIPTION="IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE"
 HOMEPAGE="https://www.strongswan.org/"
 MY_P="${P/_rc/dr}"
+S="${WORKDIR}/${MY_P}"
 SRC_URI="https://download.strongswan.org/${MY_P}.tar.bz2"
 RESTRICT="mirror"
 
