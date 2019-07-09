@@ -12,7 +12,6 @@ EGIT_REPO_URI="https://github.com/praw-dev/praw.git"
 EGIT_COMMIT="v${PV}"
 
 RDEPEND="dev-python/decorator[${PYTHON_USEDEP}]
-		python_targets_python2_7? ( dev-python/six )
 		dev-python/requests[${PYTHON_USEDEP}]"
 LICENSE="GPL-3"
 SLOT="0"
