@@ -13,7 +13,7 @@ EGIT_REPO_URI="https://github.com/sm00th/bitlbee-discord.git"
 LICENSE="GPL-2 LGPL-2.1 BSD-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="debug"
+IUSE=""
 
 RDEPEND="
 	dev-libs/glib:2
@@ -24,12 +24,6 @@ DEPEND="${RDEPEND}
 
 src_prepare() {
 	eautoreconf
-}
-
-src_configure() {
-	econf \
-		$(use_enable debug) \
-		--enable-minimal-flags
 }
 
 src_install() {
