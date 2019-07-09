@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
-inherit eutils autotools git-2
+inherit eutils autotools git-r3
 
 DESCRIPTION="Discord protocol plugin for BitlBee"
 HOMEPAGE="https://github.com/sm00th/bitlbee-discord"
@@ -28,5 +28,5 @@ src_prepare() {
 
 src_install() {
 	default
-	prune_libtool_files
+	find "${D}" -name '*.la' -type f -delete || die
 }
