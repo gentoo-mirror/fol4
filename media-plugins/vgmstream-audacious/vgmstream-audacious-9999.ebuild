@@ -5,15 +5,14 @@ EAPI=7
 
 inherit cmake-utils git-r3
 
-DESCRIPTION="vgmstream decoder addon for Kodi"
+DESCRIPTION="vgmstream decoder plugin for audacious"
 HOMEPAGE="https://github.com/losnoco/vgmstream"
 
 SRC_URI=""
 EGIT_REPO_URI="https://github.com/losnoco/vgmstream.git"
-CODENAME="Leia"
 KEYWORDS="~amd64 ~x86"
 
-LICENSE="GPL-2"
+LICENSE="public-domain"
 SLOT="0"
 IUSE=""
 
