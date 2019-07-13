@@ -16,7 +16,7 @@ LICENSE="public-domain"
 SLOT="0"
 IUSE=""
 
-RDEPEND="media-libs/audacious-plugins"
+RDEPEND="media-plugins/audacious-plugins"
 
 src_configure() {
 	local mycmakeargs=("-DUSE_FDKAAC=OFF")
