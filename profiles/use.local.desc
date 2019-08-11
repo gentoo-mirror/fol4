@@ -2,6 +2,20 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+app-portage/layman:bazaar - Support dev-vcs/bzr based overlays
+app-portage/layman:cvs - Support dev-vcs/cvs based overlays
+app-portage/layman:darcs - Support dev-vcs/darcs based overlays
+app-portage/layman:g-sorcery - Support app-portage/g-sorcery based overlays
+app-portage/layman:git - Support dev-vcs/git based overlays
+app-portage/layman:gpg - Support app-crypt/gnupg signed overlays lists and manifests
+app-portage/layman:mercurial - Support dev-vcs/mercurial based overlays
+app-portage/layman:squashfs - Support mounting squashfs image overlays locally read-only
+app-portage/layman:subversion - Support dev-vcs/subversion based overlays
+app-portage/layman:sync-plugin-portage - Install the sys-apps/portage sync module
+media-libs/vulkan-loader:layers - Include the vulkan layers
+net-misc/rdesktop:kerberos - Enable CredSPP support + Kerberos authentication with net-libs/libgssglue
+net-misc/rdesktop:pcsc-lite - Enable smartcard support with sys-apps/pcsc-lite driver
+net-misc/rdesktop:xrandr - Enable XRandR window extension support
 net-vpn/strongswan:constraints - Enable advanced X.509 constraint checking plugin
 net-vpn/strongswan:dhcp - Enable server support for querying virtual IP addresses for clients from a DHCP server. (IKEv2 only)
 net-vpn/strongswan:eap - Enable support for the different EAP modules that are supported
@@ -31,3 +45,22 @@ net-vpn/strongswan:strongswan_plugins_unbound - Enable support for the unbound p
 net-vpn/strongswan:strongswan_plugins_unity - Enable support for the unity plugin
 net-vpn/strongswan:strongswan_plugins_vici - Enable support for the vici plugin
 net-vpn/strongswan:strongswan_plugins_whitelist - Enable support for the whitelist plugin
+sys-apps/systemd:apparmor - Enable AppArmor support
+sys-apps/systemd:audit - Enable support for sys-process/audit
+sys-apps/systemd:cryptsetup - Enable cryptsetup tools (includes unit generator for crypttab)
+sys-apps/systemd:curl - Enable support for uploading journals
+sys-apps/systemd:elfutils - Enable coredump stacktraces in the journal
+sys-apps/systemd:gcrypt - Enable sealing of journal files using gcrypt
+sys-apps/systemd:gnuefi - Enable EFI boot manager and stub loader (built using sys-boot/gnu-efi)
+sys-apps/systemd:http - Enable embedded HTTP server in journald
+sys-apps/systemd:importd - Enable import daemon
+sys-apps/systemd:kmod - Enable kernel module loading via sys-apps/kmod
+sys-apps/systemd:libidn2 - If IDN support is enabled, use net-dns/libidn2 instead of net-dns/libidn
+sys-apps/systemd:lz4 - Enable lz4 compression for the journal
+sys-apps/systemd:nat - Enable support for network address translation in networkd
+sys-apps/systemd:qrcode - Enable qrcode output support in journal
+sys-apps/systemd:resolvconf - Install resolvconf symlink for systemd-resolve
+sys-apps/systemd:split-usr - Enable this if /bin and /usr/bin are separate directories
+sys-apps/systemd:sysv-utils - Install sysvinit compatibility symlinks and manpages for init, telinit, halt, poweroff, reboot, runlevel, and shutdown
+sys-apps/systemd:vanilla - Disable Gentoo-specific behavior and compatibility quirks
+sys-apps/systemd:xkb - Depend on x11-libs/libxkbcommon to allow logind to control the X11 keymap
