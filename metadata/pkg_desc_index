@@ -35,4 +35,5 @@ net-vpn/strongswan 5.8.1_rc1: IPsec-based VPN solution, supporting IKEv1/IKEv2 a
 sys-apps/systemd 239-r1: System and service manager for Linux
 sys-apps/v86d 0.1.10-r1: A daemon to run x86 code in an emulated environment
 www-plugins/pipelight 9999: Wine-based wrapper for running Windows plugins on POSIX systems
+x11-libs/libva-intel-media-driver 19.2.1: Intel Media Driver for VAAPI (iHD)
 x11-misc/twofing 0.1.2: twofing is a daemon which runs in the background and recognizes two-finger gestures performed on a touchscreen and converts them into mouse and keyboard events.
