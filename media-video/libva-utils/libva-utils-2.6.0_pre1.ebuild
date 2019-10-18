@@ -10,6 +10,7 @@ if [[ ${PV} = *9999* ]] || [[ ${PV} = 2.6.0_pre1 ]] ; then # Live ebuild
 fi
 
 if [[ ${PV} = 2.6.0_pre1 ]]; then
+	KEYWORDS="amd64 arm64 x86 ~amd64-linux ~x86-linux"
 	EGIT_COMMIT="2.6.0.pre1"
 fi
 inherit autotools
