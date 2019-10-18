@@ -13,6 +13,7 @@ app-portage/layman:squashfs - Support mounting squashfs image overlays locally r
 app-portage/layman:subversion - Support dev-vcs/subversion based overlays
 app-portage/layman:sync-plugin-portage - Install the sys-apps/portage sync module
 media-libs/vulkan-loader:layers - Include the vulkan layers
+media-video/libva-utils:drm - Enables VA/DRM API support.
 net-misc/rdesktop:kerberos - Enable CredSPP support + Kerberos authentication with net-libs/libgssglue
 net-misc/rdesktop:pcsc-lite - Enable smartcard support with sys-apps/pcsc-lite driver
 net-misc/rdesktop:xrandr - Enable XRandR window extension support
@@ -64,3 +65,5 @@ sys-apps/systemd:split-usr - Enable this if /bin and /usr/bin are separate direc
 sys-apps/systemd:sysv-utils - Install sysvinit compatibility symlinks and manpages for init, telinit, halt, poweroff, reboot, runlevel, and shutdown
 sys-apps/systemd:vanilla - Disable Gentoo-specific behavior and compatibility quirks
 sys-apps/systemd:xkb - Depend on x11-libs/libxkbcommon to allow logind to control the X11 keymap
+x11-libs/libva:drm - Enables VA/DRM API support.
+x11-libs/libva:utils - Install VA-API utility programs.
