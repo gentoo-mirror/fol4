@@ -8,6 +8,7 @@ if [[ ${PV} = *9999* ]] ; then # Live ebuild
 	EGIT_REPO_URI="https://github.com/intel/libva-utils"
 fi
 inherit autotools
+AUTOTOOLS_AUTORECONF=1
 
 DESCRIPTION="Collection of utilities and tests for VA-API"
 HOMEPAGE="https://01.org/linuxmedia/vaapi"
