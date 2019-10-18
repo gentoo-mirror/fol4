@@ -66,7 +66,7 @@ MULTILIB_WRAPPED_HEADERS=(
 
 src_prepare() {
 	default
-	[[ "${PV}" == *9999* ]] && eautoreconf
+	eautoreconf
 }
 
 multilib_src_configure() {
