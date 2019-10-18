@@ -3,16 +3,15 @@
 
 EAPI=7
 
-inherit multilib-minimal
+inherit autotools multilib-minimal
 
 DESCRIPTION="Video Acceleration (VA) API for Linux"
 HOMEPAGE="https://01.org/linuxmedia/vaapi"
 
 if [[ ${PV} = *9999* ]] ; then # Live ebuild
-	inherit autotools git-r3
+	inherit git-r3
 	EGIT_BRANCH=master
 	EGIT_REPO_URI="https://github.com/intel/libva"
-	AUTOTOOLS_AUTORECONF="yes"
 else
 	SRC_URI="https://github.com/intel/libva/archive/${PV//_/.}.tar.gz"
 	KEYWORDS="amd64 arm64 x86 ~amd64-linux ~x86-linux"
@@ -22,6 +21,8 @@ RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0/$(ver_cut 1)"
 IUSE="+drm opengl utils vdpau wayland X"
+AUTOTOOLS_AUTORECONF="yes"
+S=${WORKDIR}/${P//_/.}
 
 VIDEO_CARDS="nvidia intel i965 nouveau"
 for x in ${VIDEO_CARDS}; do
@@ -65,7 +66,7 @@ MULTILIB_WRAPPED_HEADERS=(
 
 src_prepare() {
 	default
-	[[ "${PV}" == *9999* ]] && eautoreconf
+	eautoreconf
 }
 
 multilib_src_configure() {
