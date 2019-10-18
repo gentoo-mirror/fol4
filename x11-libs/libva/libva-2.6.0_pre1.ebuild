@@ -22,6 +22,7 @@ RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0/$(ver_cut 1)"
 IUSE="+drm opengl utils vdpau wayland X"
+S=${WORKDIR}/${P//_/.}
 
 VIDEO_CARDS="nvidia intel i965 nouveau"
 for x in ${VIDEO_CARDS}; do

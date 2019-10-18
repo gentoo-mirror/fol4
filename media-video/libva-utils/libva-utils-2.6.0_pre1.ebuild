@@ -20,6 +20,7 @@ RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0"
 IUSE="+drm test wayland X"
+S=${WORKDIR}/${P//_/.}
 
 REQUIRED_USE="|| ( drm wayland X )"
 
