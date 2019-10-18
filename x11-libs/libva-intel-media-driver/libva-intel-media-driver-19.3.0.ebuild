@@ -28,8 +28,8 @@ LICENSE="MIT BSD"
 SLOT="0"
 IUSE=""
 
-DEPEND=">=media-libs/gmmlib-${PV}
-	>=x11-libs/libva-2.4.0
+DEPEND=">=media-libs/gmmlib-19.3.1
+	>=x11-libs/libva-2.6.0_pre1
 	>=x11-libs/libpciaccess-0.13.1-r1:=
 "
 RDEPEND="${DEPEND}"
