@@ -3,25 +3,31 @@
 
 EAPI=7
 
-if [[ ${PV} = *9999* ]] ; then # Live ebuild
+# Weird, the 2.6.0pre1 tar gz is just libva, not utils. get tag from git instead
+if [[ ${PV} = *9999* ]] || [[ ${PV} = 2.6.0_pre1 ]] ; then # Live ebuild
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/intel/libva-utils"
+fi
+
+if [[ ${PV} = 2.6.0_pre1 ]]; then
+	KEYWORDS="amd64 arm64 x86 ~amd64-linux ~x86-linux"
+	EGIT_COMMIT="2.6.0.pre1"
 fi
 inherit autotools
 AUTOTOOLS_AUTORECONF=1
 
 DESCRIPTION="Collection of utilities and tests for VA-API"
 HOMEPAGE="https://01.org/linuxmedia/vaapi"
-if [[ ${PV} != *9999* ]] ; then
+if [[ ${PV} != *9999* ]] && [[ ${PV} != 2.6.0_pre1 ]] ; then
 	SRC_URI="https://github.com/intel/libva-utils/archive/${PV//_/.}.tar.gz"
 	KEYWORDS="amd64 arm64 x86 ~amd64-linux ~x86-linux"
+	S=${WORKDIR}/libva-${PV//_/.}
 fi
 
 RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0"
 IUSE="+drm test wayland X"
-S=${WORKDIR}/${P//_/.}
 
 REQUIRED_USE="|| ( drm wayland X )"
 
@@ -44,7 +50,6 @@ DOCS=( NEWS )
 
 src_prepare() {
 	default
-	sed -e 's/-Werror//' -i test/Makefile.am || die
 	eautoreconf
 }
 
