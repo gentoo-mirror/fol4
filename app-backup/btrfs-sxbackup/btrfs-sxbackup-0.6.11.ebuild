@@ -1,10 +1,9 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI=5
+EAPI=7
 
-PYTHON_COMPAT=( python3_{3,4,5,6,7} )
+PYTHON_COMPAT=( python3_{3,4,5,6,7,8} )
 DISTUTILS_SINGLE_IMPL=yes
 
 inherit distutils-r1 git-r3
