@@ -4,9 +4,9 @@
 EAPI=7
 
 PYTHON_COMPAT=( python3_{6,7,8} )
-# DISTUTILS_SINGLE_IMPL=yes
+DISTUTILS_USE_SETUPTOOLS=rdepend
 
-inherit git-r3 python-single-r1
+inherit git-r3 distutils-r1
 
 DESCRIPTION="Incremental btrfs snapshot backups with push/pull support via SSH"
 HOMEPAGE="https://github.com/masc3d/btrfs-sxbackup"
