@@ -3,10 +3,10 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{3,4,5,6,7,8} )
-DISTUTILS_SINGLE_IMPL=yes
+PYTHON_COMPAT=( python3_{6,7,8} )
+DISTUTILS_USE_SETUPTOOLS=rdepend
 
-inherit distutils-r1 git-r3
+inherit git-r3 distutils-r1
 
 DESCRIPTION="Incremental btrfs snapshot backups with push/pull support via SSH"
 HOMEPAGE="https://github.com/masc3d/btrfs-sxbackup"
@@ -17,8 +17,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="sys-fs/btrfs-progs sys-apps/pv app-arch/lzop"
-DEPEND="${RDEPEND}
-	dev-python/setuptools[${PYTHON_USEDEP}]"
-
+DEPEND="${RDEPEND} ${PYTHON_DEPS}"
