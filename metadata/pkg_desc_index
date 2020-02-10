@@ -1,6 +1,5 @@
 app-backup/btrfs-sxbackup 0.6.11: Incremental btrfs snapshot backups with push/pull support via SSH
 app-editors/visual-studio-code 1.33.9999: Multiplatform Visual Studio Code from Microsoft
-app-emulation/snapd 2.38: Service and tools for management of snap packages
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
 app-portage/layman 2.4.2-r3: Tool to manage Gentoo overlays
 dev-db/freetds 0.95.95: Tabular Datastream Library
