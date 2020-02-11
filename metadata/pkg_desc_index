@@ -14,6 +14,7 @@ dev-python/praw 3.3.0 5.4.0: PRAW, an acronym for "Python Reddit API Wrapper", i
 dev-python/prawcore 0.14.0: Low-level communication layer for PRAW 4+.
 dev-python/pychromecast 2.3.0: Library for Python 2 and 3 to communicate with the Google Chromecast
 dev-python/pygeoip 0.3.2: Pure Python API for Maxmind's binary GeoIP databases.
+dev-python/pymodbus 9999: A Modbus protocol stack in Python
 dev-python/pymssql 2.1.3: DB-API interface to Microsoft SQL Server for Python
 dev-python/python-MCP342x 0.3.3: A Python module to control the GPIO on a Raspberry Pi
 dev-python/python-holidays 0.8.1: Generate and work with holidays in Python
