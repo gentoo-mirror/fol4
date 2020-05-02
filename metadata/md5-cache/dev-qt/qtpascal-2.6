@@ -1,0 +1,12 @@
+DEFINED_PHASES=prepare unpack
+DEPEND=dev-qt/qtcore:5 dev-qt/qtwebkit:5 dev-qt/qtgui:5
+DESCRIPTION=selective bind Qt to free pascal
+EAPI=6
+HOMEPAGE=http://users.telenet.be/Jan.Van.hijfte/qtforfpc/fpcqt4.html
+IUSE=-bindist
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-2
+SLOT=5
+SRC_URI=!bindist? ( http://users.telenet.be/Jan.Van.hijfte/qtforfpc/V2.6/splitbuild-qt5pas-V2.6Alpha_Qt5.1.1.tar.gz ) bindist? ( http://users.telenet.be/Jan.Van.hijfte/qtforfpc/V2.6/bin-qt5pas-V2.6Alpha_Qt5.1.1.tar.gz )
+_eclasses_=estack	686eaab303305a908fd57b2fd7617800	multilib	318e8ae683e57fd3ccd0d31a769d8ee8	qmake-utils	4eb5e05ef7ee630c003e3f0edc094135	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c
+_md5_=c3aba7a9bad8098cc41ba9e37238e278
