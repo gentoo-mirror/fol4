@@ -17,6 +17,8 @@ SLOT="5"
 
 KEYWORDS="~x86 ~amd64"
 IUSE="-bindist"
+RESTRICT="mirror"
+PATCHES=( "${FILESDIR}/${PN}-fixbuild.patch" )
 
 DEPEND="
 	dev-qt/qtcore:5
@@ -35,14 +37,15 @@ src_unpack(){
 	unpack ${archive}.tar.gz
 
 	cd "${WORKDIR}"
-	mv "${archive}" "${PF}"
+	mv "${archive}" "${P}"
 }
 
 src_prepare(){
+	eapply "${FILESDIR}/${PN}-fixbuild.patch"
 	eapply_user
 
 	if ! use bindist; then
-		eqmake4 Qt45as.pro
+		eqmake5 Qt5Pas.pro
 	fi
 }
 

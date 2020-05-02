@@ -1,0 +1,20 @@
+--- a/Qt5Pas.pro  2013-12-11 03:05:02.000000000 +0100
++++ b/Qt5Pas.pro       2020-05-02 15:49:25.260650164 +0200
+@@ -13,7 +13,7 @@
+ # Binding Release Version 2.6 against Qt5.1.1
+ VERSION = 1.2.6
+ 
+-QT += gui network webkitwidgets
++QT += gui network webkitwidgets printsupport
+ TARGET = Qt5Pas
+ TEMPLATE = lib
+ VPATH = src
+@@ -38,7 +38,7 @@
+ 
+ # Available Qt5 Pascal Binding Platforms: see http://wiki.freepascal.org/Qt4_binding#Supported_Platforms  
+ 
+-target.path = $$[QT_INSTALL_LIBS]
++target.path = $$(DESTDIR)$$[QT_INSTALL_LIBS]
+ win32 : {
+   PLATFORM = MSWINDOWS
+   target.path = $$[QT_INSTALL_BINS]
