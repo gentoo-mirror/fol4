@@ -45,7 +45,7 @@ src_prepare(){
 	eapply_user
 
 	if ! use bindist; then
-		eqmake5 Qt5Pas.pro
+		DESTDIR="${D}" eqmake5 Qt5Pas.pro
 	fi
 }
 
