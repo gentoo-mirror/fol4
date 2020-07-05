@@ -54,4 +54,9 @@ src_install() {
 	newicon -s 512 "${S}/src/main/icons/linux/512.png" intellimouse.png
 
 	make_desktop_entry "${PN}" "${DESCRIPTION}" "intellimouse" "Settings"
+
+	insinto /usr/share/polkit-1/actions/
+	doins "${FILESDIR}/org.freedesktop.intellimouse.policy"
+	sed -i s:"@RUN@":"/usr/bin/${EPYTHON}": ${ED%/}/usr/share/polkit-1/actions/org.freedesktop.intellimouse.policy
+
 }
