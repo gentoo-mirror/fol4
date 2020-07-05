@@ -13,10 +13,11 @@ LICENSE="GPL-3"
 
 KEYWORDS="~x86 ~amd64"
 SLOT="0"
-IUSE=""
+IUSE="+kde gnome"
 RDEPEND="$(python_gen_cond_dep '
 	dev-python/PyQt5[${PYTHON_USEDEP}]
 	>=dev-python/cython-hidapi-9999[${PYTHON_USEDEP}]')
+	sys-auth/polkit
 "
 DEPEND="${RDEPEND}"
 
@@ -44,7 +45,7 @@ src_install() {
 
 	python_domodule src/main/resources
 
-	make_wrapper "${PN}.tmp" "${EPYTHON} -m intellimouse"
+	make_wrapper "${PN}.tmp" "pkexec ${EPYTHON} -m intellimouse"
 	python_newexe "${ED%/}/usr/bin/${PN}.tmp" "${PN}"
 	rm "${ED%/}/usr/bin/${PN}.tmp" || die
 
