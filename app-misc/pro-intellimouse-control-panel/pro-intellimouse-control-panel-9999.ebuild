@@ -8,7 +8,7 @@ inherit git-r3 python-single-r1 python-utils-r1 eutils desktop
 # DESCRIPTION is also Program name in the .desktop file
 DESCRIPTION="Control Panel for Microsoft Pro IntelliMouse"
 HOMEPAGE="https://github.com/K-Visscher/pro-intellimouse-control-panel/"
-EGIT_REPO_URI="https://github.com/madsl/Pro-IntelliMouse-Control-Panel/"
+EGIT_REPO_URI="https://github.com/K-Visscher/pro-intellimouse-control-panel/"
 LICENSE="GPL-3"
 
 KEYWORDS="~x86 ~amd64"
