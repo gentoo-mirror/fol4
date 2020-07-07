@@ -13,7 +13,7 @@ LICENSE="GPL-3"
 
 KEYWORDS="~x86 ~amd64"
 SLOT="0"
-IUSE="+kde gnome"
+IUSE=""
 RDEPEND="$(python_gen_cond_dep '
 	dev-python/PyQt5[${PYTHON_USEDEP}]
 	>=dev-python/cython-hidapi-9999[${PYTHON_USEDEP}]')
