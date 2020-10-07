@@ -3,7 +3,6 @@ app-editors/visual-studio-code 1.33.9999: Multiplatform Visual Studio Code from 
 app-misc/doublecmd 0.9.9: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
 app-misc/pro-intellimouse-control-panel 9999: Control Panel for Microsoft Pro IntelliMouse
-app-portage/layman 2.4.2-r3: Tool to manage Gentoo overlays
 dev-db/freetds 0.95.95: Tabular Datastream Library
 dev-dotnet/dotnetcore-sdk-bin 3.0.100_pre3 3.0.100_pre5 3.0.100_pre6: .NET Core SDK - binary precompiled for glibc
 dev-libs/adobe-air-sdk-bin 2.6-r2: Adobe AIR SDK
