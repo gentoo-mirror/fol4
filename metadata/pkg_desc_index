@@ -3,6 +3,7 @@ app-editors/visual-studio-code 1.33.9999: Multiplatform Visual Studio Code from 
 app-misc/doublecmd 0.9.9: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
 app-misc/pro-intellimouse-control-panel 9999: Control Panel for Microsoft Pro IntelliMouse
+app-portage/gentoopm 0.3.1 0.3.2 9999: A common interface to Gentoo package managers
 app-portage/layman 2.4.3-r1: Tool to manage Gentoo overlays
 app-portage/smart-live-rebuild 1.3.6 9999: Check live packages for updates and emerge them as necessary
 dev-db/freetds 0.95.95: Tabular Datastream Library
