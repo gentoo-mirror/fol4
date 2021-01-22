@@ -18,7 +18,7 @@ HOMEPAGE="http://users.telenet.be/Jan.Van.hijfte/qtforfpc/fpcqt4.html"
 export regex="0000000000.(.*)"
 if [[ ${PV} =~ $regex ]]; then  export lazarus_version=${BASH_REMATCH[1]};fi
 
-SRC_URI="https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%20${lazarus_version}/lazarus-${lazarus_version}.tar.gz"
+SRC_URI="https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%20${lazarus_version}/lazarus-${lazarus_version}-2.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64" 
@@ -41,7 +41,7 @@ src_configure(){
 }
 
 src_compile(){
-echo "blah"
+	:
 }
 src_install(){
 emake INSTALL_ROOT="${D}" install 
