@@ -14,6 +14,8 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
+RESTRICT="mirror"
+
 DEPEND=">=dev-lang/lazarus-1.8"
 RDEPEND="
 	${DEPEND}
