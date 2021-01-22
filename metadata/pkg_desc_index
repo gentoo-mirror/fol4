@@ -1,6 +1,6 @@
 app-backup/btrfs-sxbackup 0.6.11: Incremental btrfs snapshot backups with push/pull support via SSH
 app-editors/visual-studio-code 1.33.9999: Multiplatform Visual Studio Code from Microsoft
-app-misc/doublecmd 0.9.9: Cross Platform file manager.
+app-misc/doublecmd 0.9.10: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
 app-misc/pro-intellimouse-control-panel 9999: Control Panel for Microsoft Pro IntelliMouse
 app-portage/gentoopm 0.3.1 0.3.2 9999: A common interface to Gentoo package managers
@@ -8,8 +8,9 @@ app-portage/layman 2.4.3-r1: Tool to manage Gentoo overlays
 app-portage/smart-live-rebuild 1.3.6 9999: Check live packages for updates and emerge them as necessary
 dev-db/freetds 0.95.95: Tabular Datastream Library
 dev-dotnet/dotnetcore-sdk-bin 3.0.100_pre3 3.0.100_pre5 3.0.100_pre6: .NET Core SDK - binary precompiled for glibc
+dev-lang/lazarus 2.0.10: Lazarus IDE is a feature rich visual programming environment emulating Delphi
 dev-libs/libmodbus 3.1.1: Modbus library which supports RTU communication over a serial line or a TCP link
-dev-libs/libqt5pas 2.6.0000000000.2.0.6: selective bind Qt to free pascal
+dev-libs/libqt5pas 2.8.0000000000.2.0.10: selective bind Qt to free pascal
 dev-perl/Email-Outlook-Message 0.919: Read Outlook .msg files
 dev-python/RPi-GPIO 0.6.2: A Python module to control the GPIO on a Raspberry Pi
 dev-python/XBee 2.3.2: XBee provides an implementation of the XBee serial communication API.

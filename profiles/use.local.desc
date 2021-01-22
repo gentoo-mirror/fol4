@@ -12,6 +12,7 @@ app-portage/layman:mercurial - Support dev-vcs/mercurial based overlays
 app-portage/layman:squashfs - Support mounting squashfs image overlays locally read-only
 app-portage/layman:subversion - Support dev-vcs/subversion based overlays
 app-portage/layman:sync-plugin-portage - Install the sys-apps/portage sync module
+dev-lang/lazarus:minimal - Don't build extra packages from the bigide component
 media-libs/vulkan-loader:layers - Include the vulkan layers
 media-video/libva-utils:drm - Enables VA/DRM API support.
 net-misc/rdesktop:kerberos - Enable CredSPP support + Kerberos authentication with net-libs/libgssglue
