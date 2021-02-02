@@ -32,9 +32,9 @@ MULTILIB_WRAPPED_HEADERS=(
 	/usr/include/shout/shout.h
 )
 
-PATCHES=(
-	"${FILESDIR}"/${PN}-2.4.1-underlinking.patch
-)
+# PATCHES=(
+#	"${FILESDIR}"/${PN}-2.4.1-underlinking.patch
+# )
 
 src_prepare() {
 	default
