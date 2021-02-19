@@ -20,6 +20,6 @@ KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~riscv ~s390 ~
 IUSE=""
 
 RDEPEND="
-	>=dev-python/starlette-0.13.6[${PYTHON_USEDEP}]
+	<dev-python/starlette-0.14.1[${PYTHON_USEDEP}]
 	dev-python/pydantic[${PYTHON_USEDEP}]
 "
