@@ -14,6 +14,7 @@ dev-libs/libqt5pas 2.8.0000000000.2.0.10: selective bind Qt to free pascal
 dev-perl/Email-Outlook-Message 0.919: Read Outlook .msg files
 dev-python/XBee 2.3.2: XBee provides an implementation of the XBee serial communication API.
 dev-python/cython-hidapi 9999: Python wrapper for the hidapi
+dev-python/fastapi 0.63.0: FastAPI framework, high performance, easy to learn, fast to code, ready for production
 dev-python/praw 3.3.0 5.4.0: PRAW, an acronym for "Python Reddit API Wrapper", is a python package that allows for simple access to reddit\'s API.
 dev-python/prawcore 0.14.0: Low-level communication layer for PRAW 4+.
 dev-python/pychromecast 2.3.0: Library for Python 2 and 3 to communicate with the Google Chromecast
