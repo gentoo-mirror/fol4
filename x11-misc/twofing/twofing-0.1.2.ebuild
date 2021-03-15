@@ -1,7 +1,7 @@
 # Copyright 2015 Mads
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=2
+EAPI=7
 DESCRIPTION="twofing is a daemon which runs in the background and recognizes two-finger gestures performed on a touchscreen and converts them into mouse and keyboard events."
 HOMEPAGE="http://plippo.de/p/twofing"
 
