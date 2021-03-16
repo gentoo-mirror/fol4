@@ -34,9 +34,11 @@ media-video/libva-utils 2.6.0_pre1: Collection of utilities and tests for VA-API
 media-video/mkchromecast 0.3.8.1 9999: Cast Audio/Video to your Google Cast and Sonos Devices
 net-dialup/forticlientsslvpn 4.4.2329: SSL VPN Client for Fortinet
 net-im/bitlbee-discord 9999: Discord protocol plugin for BitlBee
+net-irc/sopel 6.6.3: An easy-to-use and highly extensible IRC Bot framework
 net-libs/meanwhile 1.1.1: Meanwhile (Sametime protocol) library
 net-misc/rdesktop 9999: A Remote Desktop Protocol Client
 net-print/utax-ta-ppds 20140115: PPD description files and filter for UTAX and Triump-Adler (both based on Kyocera) printers
+net-proxy/dante 1.4.1-r1: A free socks4,5 and msproxy implementation
 net-vpn/strongswan 5.8.1_rc1: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 sys-apps/systemd 239-r1: System and service manager for Linux
 sys-apps/v86d 0.1.10-r1: A daemon to run x86 code in an emulated environment
