@@ -5,7 +5,7 @@ EAPI=7
 
 PYTHON_COMPAT=( python{3_6,3_7,3_8,3_9} pypy3 )
 
-inherit distutils-r1 git-r3 versionator
+inherit distutils-r1 git-r3
 
 DESCRIPTION="An easy-to-use and highly extensible IRC Bot framework"
 HOMEPAGE="http://sopel.chat/"
