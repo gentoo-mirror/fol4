@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-inherit autotools ltprune systemd user multilib-minimal
+inherit autotools systemd user multilib-minimal
 
 DESCRIPTION="A free socks4,5 and msproxy implementation"
 HOMEPAGE="https://www.inet.no/dante/"
@@ -88,7 +88,7 @@ multilib_src_install_all() {
 	docinto examples
 	dodoc example/*.conf
 
-	prune_libtool_files
+	find "${D}" -name '*.la' -delete || die
 }
 
 pkg_postinst() {
