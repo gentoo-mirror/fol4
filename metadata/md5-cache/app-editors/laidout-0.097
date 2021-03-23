@@ -1,0 +1,12 @@
+DEFINED_PHASES=-
+DEPEND=media-libs/libpng sys-libs/readline x11-base/xorg-server net-print/cups x11-libs/cairo media-libs/harfbuzz media-libs/imlib2 media-libs/lcms dev-libs/openssl dev-db/sqlite media-libs/freetype media-gfx/graphicsmagick sys-libs/zlib media-libs/gegl:0.3 media-libs/ftgl
+DESCRIPTION=DTP, and experimental vector graphics tools
+EAPI=7
+HOMEPAGE=https://laidout.org/
+KEYWORDS=amd64 x86
+LICENSE=GPL-3
+RDEPEND=media-libs/libpng sys-libs/readline x11-base/xorg-server net-print/cups x11-libs/cairo media-libs/harfbuzz media-libs/imlib2 media-libs/lcms dev-libs/openssl dev-db/sqlite media-libs/freetype media-gfx/graphicsmagick sys-libs/zlib media-libs/gegl:0.3 media-libs/ftgl
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/Laidout/laidout/releases/download/0.097/laidout-0.097.tar.bz2
+_md5_=25f15de66fdbf5b2eae15148e8ab7417
