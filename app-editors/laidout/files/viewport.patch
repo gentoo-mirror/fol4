@@ -1,0 +1,14 @@
+--- a/src/ui/objecttree.cc	2021-03-23 20:04:26.503716653 +0100
++++ b/src/ui/objecttree.cc	2021-03-23 20:05:32.485071828 +0100
+@@ -316,9 +316,9 @@
+ 		//DBG if (!viewport) return 0;
+ 		//DBG viewport->PostMessage(sm->str);
+ 
+-		if (viewport && domain == InViewport) {
++		// if (viewport && domain == InViewport) {
+ 			// viewport->Select(sm->str);
+-		}
++		// }
+ 
+ 		return 0;
+ 
