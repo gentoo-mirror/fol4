@@ -12,4 +12,4 @@ RDEPEND=dev-libs/openssl media-gfx/graphicsmagick media-libs/freetype media-libs
 RESTRICT=mirror
 SLOT=0
 _eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
-_md5_=caae7debdf85fa508c80a8d98cc3777b
+_md5_=f89c83ada69ec332dbc44325d977e873
