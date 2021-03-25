@@ -1,6 +1,6 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure prepare unpack
-DEPEND=media-libs/libpng sys-libs/readline x11-base/xorg-server net-print/cups x11-libs/cairo media-libs/harfbuzz media-libs/imlib2 media-libs/lcms dev-libs/openssl media-libs/freetype media-gfx/graphicsmagick sys-libs/zlib media-libs/gegl:0.4 media-libs/ftgl
+DEPEND=dev-libs/openssl media-gfx/graphicsmagick media-libs/freetype media-libs/ftgl media-libs/gegl:0.4 media-libs/harfbuzz media-libs/imlib2 media-libs/lcms media-libs/libpng net-print/cups sys-libs/readline sys-libs/zlib x11-base/xorg-server x11-libs/cairo
 DESCRIPTION=DTP, and experimental vector graphics tools
 EAPI=7
 HOMEPAGE=https://laidout.org/
@@ -8,8 +8,8 @@ INHERIT=git-r3
 KEYWORDS=amd64 x86
 LICENSE=GPL-3
 PROPERTIES=live
-RDEPEND=media-libs/libpng sys-libs/readline x11-base/xorg-server net-print/cups x11-libs/cairo media-libs/harfbuzz media-libs/imlib2 media-libs/lcms dev-libs/openssl media-libs/freetype media-gfx/graphicsmagick sys-libs/zlib media-libs/gegl:0.4 media-libs/ftgl
+RDEPEND=dev-libs/openssl media-gfx/graphicsmagick media-libs/freetype media-libs/ftgl media-libs/gegl:0.4 media-libs/harfbuzz media-libs/imlib2 media-libs/lcms media-libs/libpng net-print/cups sys-libs/readline sys-libs/zlib x11-base/xorg-server x11-libs/cairo
 RESTRICT=mirror
 SLOT=0
 _eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
-_md5_=2745d4d5b8b1475917f7e13ddf710705
+_md5_=caae7debdf85fa508c80a8d98cc3777b
