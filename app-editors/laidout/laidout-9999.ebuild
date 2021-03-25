@@ -54,18 +54,18 @@ src_prepare() {
 
 src_configure() {
 	cd laxkit
-	./configure --disable-sqlite --relocatable
+	./configure --disable-sqlite --relocatable --disable-gl --prefix="${D}/usr"
 	cd ..
 	./configure --prefix="${D}/usr" --relocatable --laxkit=`pwd`/laxkit/lax --nogl --disable-sqlite --gegl-version=gegl-0.4 --version=${PV}
 }
 
 src_compile() {
-	export CXXFLAGS="${CXXFLAGS} -std=c++11 -DLAX_LISTS_SOURCE_TOO"
+	export CXXFLAGS="${CXXFLAGS} -std=c++11"
+	cd laxkit
+	emake touchdepends hidegarbage
+	cd ..
 	emake hidegarbage
 	emake
 	cp laidout-icons/target-24/* src/icons
-	cd src/icons
-	emake all-with-lax
-	cd ../..
 }
 
