@@ -17,20 +17,20 @@ IUSE=""
 RESTRICT="mirror"
 
 DEPEND="
-	media-libs/libpng
-	sys-libs/readline
-	x11-base/xorg-server
-	net-print/cups
-	x11-libs/cairo
+	dev-libs/openssl
+	media-gfx/graphicsmagick
+	media-libs/freetype
+	media-libs/ftgl
+	media-libs/gegl:0.4
 	media-libs/harfbuzz
 	media-libs/imlib2
 	media-libs/lcms
-	dev-libs/openssl
-	media-libs/freetype
-	media-gfx/graphicsmagick
+	media-libs/libpng
+	net-print/cups
+	sys-libs/readline
 	sys-libs/zlib
-	media-libs/gegl:0.4
-	media-libs/ftgl
+	x11-base/xorg-server
+	x11-libs/cairo
 "
 RDEPEND="${DEPEND}"
 
@@ -46,7 +46,6 @@ src_unpack() {
 }
 
 src_prepare() {
-	eapply "${FILESDIR}/viewport.patch"
 	default
 	# find . -iname "*Makefile" -print0 | xargs -0 sed -i s:"\`freetype-config --cflags\`":"-I/usr/include/freetype2":g
 	# find . -iname "*Makefile" -print0 | xargs -0 sed -i s:"\`freetype-config --libs\`":"-lfreetype":g
@@ -57,7 +56,7 @@ src_configure() {
 	cd laxkit
 	./configure --disable-sqlite --relocatable
 	cd ..
-	./configure --prefix="${D}/usr" --relocatable --laxkit=`pwd`/laxkit/lax --nogl --disable-sqlite --gegl-version=gegl-0.4
+	./configure --prefix="${D}/usr" --relocatable --laxkit=`pwd`/laxkit/lax --nogl --disable-sqlite --gegl-version=gegl-0.4 --version=${PV}
 }
 
 src_compile() {
