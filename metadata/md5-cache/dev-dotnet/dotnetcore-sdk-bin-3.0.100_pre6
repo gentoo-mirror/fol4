@@ -2,11 +2,12 @@ DEFINED_PHASES=install
 DESCRIPTION=.NET Core SDK - binary precompiled for glibc
 EAPI=7
 HOMEPAGE=https://www.microsoft.com/net/core
+INHERIT=eutils
 KEYWORDS=~amd64
 LICENSE=MIT
 RDEPEND=>=sys-apps/lsb-release-1.4 >=sys-devel/llvm-4.0 >=dev-util/lldb-4.0 >=sys-libs/libunwind-1.1-r1 >=dev-libs/icu-57.1 >=dev-util/lttng-ust-2.8.1 >=dev-libs/openssl-1.0.2h-r2 >=net-misc/curl-7.49.0 >=app-crypt/mit-krb5-1.14.2 >=sys-libs/zlib-1.2.8-r1 !dev-dotnet/dotnetcore-sdk !dev-dotnet/dotnetcore-runtime-bin !dev-dotnet/dotnetcore-aspnet-bin
 RESTRICT=mirror
 SLOT=0
 SRC_URI=amd64? ( https://download.visualstudio.microsoft.com/download/pr/72ce4d40-9063-4a2e-a962-0bf2574f75d1/5463bb92cff4f9c76935838d1efbc757/dotnet-sdk-3.0.100-preview6-012264-linux-x64.tar.gz -> dotnet-sdk-3.0.100_pre6-linux-x64.tar.gz )
-_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	l10n	8cdd85e169b835d518bc2fd59f780d8e	wrapper	4251d4c84c25f59094fd557e0063a974
+_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	l10n	8cdd85e169b835d518bc2fd59f780d8e	wrapper	4251d4c84c25f59094fd557e0063a974	eutils	2d5b3f4b315094768576b6799e4f926e
 _md5_=c14c06afcaf3c35102eb402ad244877b
