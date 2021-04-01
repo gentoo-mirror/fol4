@@ -31,6 +31,7 @@ media-gfx/oda-file-converter 20.8.0.0: Converts files between the .dwg and .dxf 
 media-libs/gmmlib 19.3.1: Intel Graphics Memory Management Library
 media-libs/libshout 2.4.1 9999: library for connecting and sending data to icecast servers
 media-plugins/vgmstream-audacious 9999: vgmstream decoder plugin for audacious
+media-sound/butt 0.1.29-r1: butt is an easy to use, multi OS streaming tool
 media-video/libva-utils 2.6.0_pre1: Collection of utilities and tests for VA-API
 media-video/mkchromecast 0.3.8.1 9999: Cast Audio/Video to your Google Cast and Sonos Devices
 net-dialup/forticlientsslvpn 4.4.2329: SSL VPN Client for Fortinet

@@ -1,0 +1,15 @@
+DEFINED_PHASES=configure install postinst postrm prepare
+DEPEND=aac? ( media-libs/fdk-aac ) flac? ( media-libs/flac ) vorbis? ( media-libs/libogg media-libs/libvorbis ) opus? ( media-libs/opus ) media-libs/portaudio mp3? ( media-sound/lame ) x11-libs/fltk
+DESCRIPTION=butt is an easy to use, multi OS streaming tool
+EAPI=7
+HOMEPAGE=http://danielnoethen.de/butt/
+INHERIT=eutils flag-o-matic desktop xdg-utils
+IUSE=aac flac mp3 ogg opus vorbis
+KEYWORDS=amd64
+LICENSE=GPL-2+
+RDEPEND=aac? ( media-libs/fdk-aac ) flac? ( media-libs/flac ) vorbis? ( media-libs/libogg media-libs/libvorbis ) opus? ( media-libs/opus ) media-libs/portaudio mp3? ( media-sound/lame ) x11-libs/fltk
+RESTRICT=mirror
+SLOT=0
+SRC_URI=mirror://sourceforge/butt/butt-0.1.29.tar.gz
+_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	l10n	8cdd85e169b835d518bc2fd59f780d8e	wrapper	4251d4c84c25f59094fd557e0063a974	eutils	2d5b3f4b315094768576b6799e4f926e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	flag-o-matic	09a8beb8e6a8e02dc1e1bd83ac353741	desktop	c0d27bf73aa08ca05b663dbd31fbef28	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=5daba9fa2e1d37c9efcffb85a825fcda

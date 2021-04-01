@@ -13,6 +13,11 @@ app-portage/layman:squashfs - Support mounting squashfs image overlays locally r
 app-portage/layman:subversion - Support dev-vcs/subversion based overlays
 app-portage/layman:sync-plugin-portage - Install the sys-apps/portage sync module
 dev-lang/lazarus:minimal - Don't build extra packages from the bigide component
+media-sound/butt:aac - Enables streaming via the MPEG-4 AAC codec
+media-sound/butt:flac - Enables recording via the FLAC codec
+media-sound/butt:mp3 - Enables streaming via the MP3 codec
+media-sound/butt:opus - Enables streaming via the Opus codec
+media-sound/butt:vorbis - Enables streaming via the vorbis codec
 media-video/libva-utils:drm - Enables VA/DRM API support.
 net-misc/rdesktop:kerberos - Enable CredSPP support + Kerberos authentication with net-libs/libgssglue
 net-misc/rdesktop:pcsc-lite - Enable smartcard support with sys-apps/pcsc-lite driver
