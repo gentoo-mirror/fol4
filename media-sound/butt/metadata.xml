@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <maintainer type="person">
+        <email>c.affolter@purplehaze.ch</email>
+        <name>Christian Affolter</name>
+    </maintainer>
+    <longdescription lang="en">
+        butt (broadcast using this tool) is an easy to use, multi OS streaming
+        tool. It supports ShoutCast and IceCast and runs on Linux, MacOS and
+        Windows.
+        The main purpose of butt is to stream live audio data from your
+        computers Mic or Line input to an Shoutcast or Icecast server.
+        Recording is also possible.
+        It is NOT intended to be a server by itself or automatically stream a
+        set of audio files.
+    </longdescription>
+    <use>
+        <flag name="aac">Enables streaming via the MPEG-4 AAC codec</flag>
+        <flag name="flac">Enables recording via the FLAC codec</flag>
+        <flag name="mp3">Enables streaming via the MP3 codec</flag>
+        <flag name="opus">Enables streaming via the Opus codec</flag>
+        <flag name="vorbis">Enables streaming via the vorbis codec</flag>
+    </use>
+</pkgmetadata>
