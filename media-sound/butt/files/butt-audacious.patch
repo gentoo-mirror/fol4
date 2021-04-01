@@ -1,0 +1,35 @@
+diff --git a/src/FLTK/fl_funcs.cpp b/src/FLTK/fl_funcs.cpp
+index 96b1d0d..efb5ad0 100644
+--- a/src/FLTK/fl_funcs.cpp
++++ b/src/FLTK/fl_funcs.cpp
+@@ -178,6 +178,7 @@ void fill_cfg_widgets(void)
+     fl_g->choice_cfg_app->add("Spotify");
+     fl_g->choice_cfg_app->add("Cantata");
+     fl_g->choice_cfg_app->add("Strawberry");
++    fl_g->choice_cfg_app->add("Audacious");
+     fl_g->check_cfg_use_app->value(cfg.main.app_update);
+     fl_g->choice_cfg_app->value(cfg.main.app_update_service);
+     if (cfg.main.app_artist_title_order == APP_ARTIST_FIRST)
+diff --git a/src/currentTrackLinux.cpp b/src/currentTrackLinux.cpp
+index ac822e9..b1e4577 100755
+--- a/src/currentTrackLinux.cpp
++++ b/src/currentTrackLinux.cpp
+@@ -225,6 +225,10 @@ const char* getCurrentTrackStrawberry(int artist_title_order) {
+     return get_mpris("org.mpris.MediaPlayer2.strawberry", artist_title_order);
+ }
+ 
++const char* getCurrentTrackAudacious(int artist_title_order) {
++    return get_mpris("org.mpris.MediaPlayer2.audacious", artist_title_order);
++}
++
+ currentTrackFunction getCurrentTrackFunctionFromId(int i) {
+     switch(i) {
+         case 0: return &getCurrentTrackRhythmbox;
+@@ -233,6 +237,7 @@ currentTrackFunction getCurrentTrackFunctionFromId(int i) {
+         case 3: return &getCurrentTrackSpotify;
+         case 4: return &getCurrentTrackCantata;
+         case 5: return &getCurrentTrackStrawberry;
++        case 6: return &getCurrentTrackAudacious;
+         default: return NULL;
+     }
+ }
