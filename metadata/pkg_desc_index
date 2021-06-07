@@ -3,9 +3,6 @@ app-editors/laidout 9999: DTP, and experimental vector graphics tools
 app-misc/doublecmd 0.9.10: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
 app-misc/pro-intellimouse-control-panel 9999: Control Panel for Microsoft Pro IntelliMouse
-app-portage/gentoopm 0.3.1 0.3.2 9999: A common interface to Gentoo package managers
-app-portage/layman 2.4.3-r1: Tool to manage Gentoo overlays
-app-portage/smart-live-rebuild 1.3.6 9999: Check live packages for updates and emerge them as necessary
 dev-db/freetds 0.95.95: Tabular Datastream Library
 dev-dotnet/dotnetcore-sdk-bin 3.0.100_pre3 3.0.100_pre5 3.0.100_pre6: .NET Core SDK - binary precompiled for glibc
 dev-lang/lazarus 2.0.10: Lazarus IDE is a feature rich visual programming environment emulating Delphi
@@ -18,17 +15,22 @@ dev-python/cython-hidapi 9999: Python wrapper for the hidapi
 dev-python/fastapi 0.63.0: FastAPI framework, high performance, easy to learn, fast to code, ready for production
 dev-python/paho-mqtt 1.3.1: A client class with support for both MQTT v3.1 and v3.1.1 on Python 2.7 or 3.x.
 dev-python/praw 5.4.0: PRAW, an acronym for "Python Reddit API Wrapper", is a python package that allows for simple access to reddit\'s API.
+dev-python/prawcore 0.14.0: Low-level communication layer for PRAW 4+.
+dev-python/pychromecast 2.3.0: Library for Python 2 and 3 to communicate with the Google Chromecast
+dev-python/pygeoip 0.3.2: Pure Python API for Maxmind's binary GeoIP databases.
 dev-python/pymodbus 9999: A Modbus protocol stack in Python
 dev-python/pymssql 2.1.3: DB-API interface to Microsoft SQL Server for Python
 dev-python/python-MCP342x 0.3.3: A Python module to control the GPIO on a Raspberry Pi
 dev-python/python-holidays 0.8.1: Generate and work with holidays in Python
 dev-python/starlette 0.14.0: The little ASGI framework that shines
+dev-python/update-checker 0.16: A python module that will check for package updates.
 media-gfx/oda-file-converter 20.8.0.0: Converts files between the .dwg and .dxf file formats
 media-libs/gmmlib 19.3.1: Intel Graphics Memory Management Library
 media-libs/libshout 2.4.1 9999: library for connecting and sending data to icecast servers
 media-plugins/vgmstream-audacious 9999: vgmstream decoder plugin for audacious
 media-sound/butt 0.1.29-r1: butt is an easy to use, multi OS streaming tool
 media-video/libva-utils 2.6.0_pre1: Collection of utilities and tests for VA-API
+media-video/mkchromecast 0.3.8.1 9999: Cast Audio/Video to your Google Cast and Sonos Devices
 net-dialup/forticlientsslvpn 4.4.2329: SSL VPN Client for Fortinet
 net-im/bitlbee-discord 9999: Discord protocol plugin for BitlBee
 net-irc/sopel 6.6.3: An easy-to-use and highly extensible IRC Bot framework
@@ -37,6 +39,7 @@ net-misc/rdesktop 9999: A Remote Desktop Protocol Client
 net-print/utax-ta-ppds 20140115: PPD description files and filter for UTAX and Triump-Adler (both based on Kyocera) printers
 net-proxy/dante 1.4.1-r1: A free socks4,5 and msproxy implementation
 net-vpn/strongswan 5.8.1_rc1: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
+sys-apps/systemd 239-r1: System and service manager for Linux
 sys-apps/v86d 0.1.10-r1: A daemon to run x86 code in an emulated environment
 www-plugins/pipelight 9999: Wine-based wrapper for running Windows plugins on POSIX systems
 x11-libs/libva 2.6.0_pre1: Video Acceleration (VA) API for Linux
