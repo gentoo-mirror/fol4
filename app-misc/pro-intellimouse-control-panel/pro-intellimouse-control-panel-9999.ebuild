@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-PYTHON_COMPAT=(python3_{6,7,8})
+PYTHON_COMPAT=(python3_{8..10})
 inherit git-r3 python-single-r1 python-utils-r1 eutils desktop
 
 # DESCRIPTION is also Program name in the .desktop file

@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{7,8} )
+PYTHON_COMPAT=( python3_{7,8,9,10} )
 
 DOCS_BUILDER="mkdocs"
 DOCS_DEPEND="dev-python/mkdocs-material"
