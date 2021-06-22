@@ -12,4 +12,4 @@ RESTRICT=strip mirror
 SLOT=0
 SRC_URI=https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%202.0.10/lazarus-2.0.10-2.tar.gz
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28
-_md5_=f25919c17e45b571a68e03256e4c48b2
+_md5_=8a1c695b8ff54b8216360ae49907f925
