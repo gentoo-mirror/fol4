@@ -5,11 +5,11 @@ EAPI=7
 
 inherit desktop
 
-FPCVER="3.0.4"
+FPCVER="3.2.0"
 
 DESCRIPTION="Lazarus IDE is a feature rich visual programming environment emulating Delphi"
 HOMEPAGE="https://www.lazarus-ide.org/"
-SRC_URI="https://sourceforge.net/projects/${PN}/files/Lazarus%20Zip%20_%20GZip/Lazarus%20${PV}/${P}-2.tar.gz"
+SRC_URI="https://sourceforge.net/projects/${PN}/files/Lazarus%20Zip%20_%20GZip/Lazarus%20${PV}/${P}.tar.gz"
 
 LICENSE="GPL-2 LGPL-2.1-with-linking-exception"
 SLOT="0" # Note: Slotting Lazarus needs slotting fpc, see DEPEND.
@@ -26,7 +26,7 @@ RESTRICT="strip mirror" #269221
 
 S="${WORKDIR}/${PN}"
 
-PATCHES=( "${FILESDIR}"/${PN}-0.9.26-fpcsrc.patch )
+# PATCHES=( "${FILESDIR}"/${PN}-0.9.26-fpcsrc.patch )
 
 src_prepare() {
 	default
@@ -45,7 +45,7 @@ src_prepare() {
 }
 
 src_compile() {
-	LCL_PLATFORM=gtk2 USESVN2REVISIONINC=0 emake \
+	LCL_PLATFORM=gtk2 emake \
 		$(usex minimal "" "bigide") \
 		-j1
 }
