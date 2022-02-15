@@ -24,7 +24,7 @@ RDEPEND="
 	sys-libs/ncurses
 	x11-libs/libX11
 	>=dev-qt/qtcore-5.6
-	>=dev-libs/libqt5pas-2.6
+	>=dev-libs/libqt5pas-1.2.8
 "
 
 
