@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -15,10 +15,11 @@ HOMEPAGE="http://users.telenet.be/Jan.Van.hijfte/qtforfpc/fpcqt4.html"
 #for example 2.6.0000000000.2.0.2 means that qtpascal version is 2.6, and sources
 #are extracted from lazarus 2.0.2
 #ten zeros is the separator
+#Note: Version is extracted from Qt5Pas.pro
 export regex="0000000000.(.*)"
 if [[ ${PV} =~ $regex ]]; then  export lazarus_version=${BASH_REMATCH[1]};fi
 
-SRC_URI="https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%20${lazarus_version}/lazarus-${lazarus_version}.tar.gz"
+SRC_URI="https://sourceforge.net/projects/lazarus/files/Lazarus%20Zip%20_%20GZip/Lazarus%20${lazarus_version}/lazarus-${lazarus_version}-0.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64" 
