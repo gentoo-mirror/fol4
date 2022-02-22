@@ -2,7 +2,7 @@ app-backup/btrfs-sxbackup 0.6.11: Incremental btrfs snapshot backups with push/p
 app-editors/laidout 9999: DTP, and experimental vector graphics tools
 app-misc/doublecmd 1.0.4: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
-app-misc/pro-intellimouse-control-panel 9999: Control Panel for Microsoft Pro IntelliMouse
+app-misc/intellimouse-ctl 9999: CLI for Microsoft IntelliMouse
 dev-db/freetds 0.95.95: Tabular Datastream Library
 dev-dotnet/dotnetcore-sdk-bin 3.0.100_pre3 3.0.100_pre5 3.0.100_pre6: .NET Core SDK - binary precompiled for glibc
 dev-libs/libmodbus 3.1.1: Modbus library which supports RTU communication over a serial line or a TCP link
