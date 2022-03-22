@@ -15,19 +15,14 @@ KEYWORDS="amd64 x86"
 DEPEND="acct-group/input"
 
 uinput_check() {
-    ebegin "Checking for uinput support"
+    ebegin "Checking for uinput and hidraw support"
     local rc=1
-    linux_config_exists && linux_chkconfig_present INPUT_UINPUT
+    linux_config_exists && linux_chkconfig_present INPUT_UINPUT HIDRAW
     rc=$?
 
     if [[ ${rc} -ne 0 ]] ; then
-        eerror "To use kfreestyle2d, you need to compile your kernel with uinput support."
-        eerror "Please enable uinput support in your kernel config, found at:"
-        eerror
-        eerror "Device Drivers -> Input Device ... -> Miscellaneous devices -> User level driver support."
-        eerror
-        eerror "Once enabled, you should have the /dev/input/uinput device."
-        eerror "kfreestyle2d will not work without the uinput device."
+        eerror "To use kfreestyle2d, you need to compile your kernel with uinput and hidraw support."
+        eerror "Please enable uinput and hidraw support in your kernel config."
     fi
 }
 
@@ -38,6 +33,7 @@ pkg_setup() {
 
 src_prepare() {
 	eapply "${FILESDIR}"/makefile.patch
+	eapply "${FILESDIR}"/kfreestyle2d.service.patch
 	eapply_user
 }
 
