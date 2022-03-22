@@ -42,7 +42,9 @@ src_prepare() {
 }
 
 src_install() {
-	mkdir -p "${D}/lib/systemd/system/"
-	mkdir -p "${D}/lib/udev/rules.d/"
+	mkdir -v -p "${D}/lib/systemd/system"
+	mkdir -v -p "${D}/lib/udev/rules.d"
+	mkdir -v -p "${D}/etc/modules-load.d"
+	cp -v "${FILESDIR}/uinput.conf" "${D}/etc/modules-load.d/"
 	default
 }
