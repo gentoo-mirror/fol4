@@ -1,0 +1,51 @@
+--- a/makefile	2022-03-22 14:09:28.760616338 +0100
++++ b/makefile	2022-03-22 14:09:17.769549114 +0100
+@@ -1,32 +1,24 @@
+ CC = c99
+-CFLAGS = -g -Wall -Wextra -pedantic
+ OBJS = k.o
+ 
+-PREFIX = /usr/local/share
+-INSTALLPATH = $(PREFIX)/kfreestyle2d/
+-GROUP = uinput
+-GROUPADD_PATH = /usr/sbin/groupadd
++INSTALLPATH = $(DESTDIR)/usr/share/kfreestyle2d/
++GROUP = input
+ 
+ kfreestyle2d: $(OBJS)
+ 	$(CC) $(CFLAGS) $(OBJS) -o kfreestyle2d
+ 
+ systemd: kfreestyle2d.service.template
+-	cat kfreestyle2d.service.template | sed 's|<<<PREFIX>>>|$(PREFIX)|g' \
+-	| sed 's|<<<GROUP>>>|$(GROUP)|g' > /etc/systemd/system/kfreestyle2d.service
++	cat kfreestyle2d.service.template | sed 's|<<<PREFIX>>>|/usr/share|g' \
++	| sed 's|<<<GROUP>>>|$(GROUP)|g' > $(DESTDIR)/lib/systemd/system/kfreestyle2d.service
+ 
+ # Create a copy of the udev rules 
+ udev-rule: ./99-kfreestyle2d.rules.template
+ 	cat 99-kfreestyle2d.rules.template | sed 's|<<<GROUP>>>|$(GROUP)|g' \
+-	> /etc/udev/rules.d/99-kfreestyle2d.rules
+-
+-# Add a uinput user to the system
+-group:
+-	$(GROUPADD_PATH) -f uinput
+-	id -u uinput > /dev/null 2>&1 || useradd --system --no-create-home --shell /bin/false -g uinput uinput > /dev/null
++	> $(DESTDIR)/lib/udev/rules.d/99-kfreestyle2d.rules
+ 
+ # Ensure the existence of a directory within the prefix location
+ directory:
+-	mkdir $(INSTALLPATH) || true # ensure doesn't crash if already exists
++	mkdir -p $(INSTALLPATH) || true # ensure doesn't crash if already exists
+ 
+ # Copy the binary to its new home. Unlink any existing file first in case the
+ # service is already running.
+@@ -43,8 +35,7 @@
+ 
+ # Insert the uinput kernel module and ensure that it is inserted on startup
+ module:
+-	grep -e "uinput" /etc/modules > /dev/null 2>&1 || echo "uinput" >> /etc/modules
+ 	modprobe uinput
+ 	
+-install: group systemd udev-rule binary module refresh
++install: systemd udev-rule binary
+ 	
