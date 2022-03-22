@@ -1,0 +1,8 @@
+--- a/kfreestyle2d.service.template	2022-03-22 15:20:06.734990564 +0100
++++ b/kfreestyle2d.service.template	2022-03-22 15:20:43.913258271 +0100
+@@ -6,5 +6,4 @@
+ Restart=no
+ TimeoutSec=1
+ Group=<<<GROUP>>>
+-User=<<<GROUP>>>
+ ExecStart=<<<PREFIX>>>/kfreestyle2d/kfreestyle2d /dev/kfreestyle2-fn
