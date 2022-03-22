@@ -42,4 +42,5 @@ sys-apps/v86d 0.1.10-r1: A daemon to run x86 code in an emulated environment
 www-plugins/pipelight 9999: Wine-based wrapper for running Windows plugins on POSIX systems
 x11-libs/libva 2.6.0_pre1: Video Acceleration (VA) API for Linux
 x11-libs/libva-intel-media-driver 19.3.0: Intel Media Driver for VAAPI (iHD)
+x11-misc/kfreestyle2d 9999: Unofficial Kinesis Freestyle 2 Userspace Linux Driver
 x11-misc/twofing 0.1.2: twofing is a daemon which runs in the background and recognizes two-finger gestures performed on a touchscreen and converts them into mouse and keyboard events.
