@@ -1,6 +1,6 @@
 app-backup/btrfs-sxbackup 0.6.11: Incremental btrfs snapshot backups with push/pull support via SSH
 app-editors/laidout 9999: DTP, and experimental vector graphics tools
-app-misc/doublecmd 1.0.4: Cross Platform file manager.
+app-misc/doublecmd 1.0.5: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
 app-misc/intellimouse-ctl 9999: CLI for Microsoft IntelliMouse
 dev-db/freetds 0.95.95: Tabular Datastream Library
