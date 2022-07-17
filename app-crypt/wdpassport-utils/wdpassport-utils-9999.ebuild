@@ -15,4 +15,5 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
-RDEPEND="dev-python/py_sg[${PYTHON_USEDEP}]"
+RDEPEND="dev-python/py_sg[${PYTHON_USEDEP}]
+         dev-python/pyudev[${PYTHON_USEDEP}]"
