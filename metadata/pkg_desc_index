@@ -1,4 +1,5 @@
 app-backup/btrfs-sxbackup 0.6.11: Incremental btrfs snapshot backups with push/pull support via SSH
+app-crypt/wdpassport-utils 9999: WD My Passport Drive Hardware Encryption Utility for Linux
 app-editors/laidout 9999: DTP, and experimental vector graphics tools
 app-misc/doublecmd 1.0.5: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
@@ -14,6 +15,7 @@ dev-python/fastapi 0.63.0: FastAPI framework, high performance, easy to learn, f
 dev-python/paho-mqtt 1.3.1: A client class with support for both MQTT v3.1 and v3.1.1 on Python 2.7 or 3.x.
 dev-python/praw 5.4.0: PRAW, an acronym for "Python Reddit API Wrapper", is a python package that allows for simple access to reddit\'s API.
 dev-python/prawcore 0.14.0: Low-level communication layer for PRAW 4+.
+dev-python/py_sg 9999: This is a fork of Dan Lenski's SCSI library, rewritten to be compatible with Python3
 dev-python/pychromecast 12.1.3: Python module to talk to Google Chromecast
 dev-python/pygeoip 0.3.2: Pure Python API for Maxmind's binary GeoIP databases.
 dev-python/pymodbus 9999: A Modbus protocol stack in Python
