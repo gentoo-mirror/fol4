@@ -25,9 +25,7 @@ dev-python/python-holidays 0.8.1: Generate and work with holidays in Python
 dev-python/starlette 0.14.0: The little ASGI framework that shines
 dev-python/update-checker 0.16: A python module that will check for package updates.
 media-gfx/oda-file-converter 20.8.0.0: Converts files between the .dwg and .dxf file formats
-media-libs/gmmlib 19.3.1: Intel Graphics Memory Management Library
 media-libs/libshout 2.4.1 9999: library for connecting and sending data to icecast servers
-media-plugins/vgmstream-audacious 9999: vgmstream decoder plugin for audacious
 media-sound/butt 0.1.29-r1: butt is an easy to use, multi OS streaming tool
 media-video/libva-utils 2.6.0_pre1: Collection of utilities and tests for VA-API
 media-video/mkchromecast 0.3.8.1 9999: Cast Audio/Video to your Google Cast and Sonos Devices
@@ -43,6 +41,5 @@ sys-apps/systemd 239-r1: System and service manager for Linux
 sys-apps/v86d 0.1.10-r1: A daemon to run x86 code in an emulated environment
 www-plugins/pipelight 9999: Wine-based wrapper for running Windows plugins on POSIX systems
 x11-libs/libva 2.6.0_pre1: Video Acceleration (VA) API for Linux
-x11-libs/libva-intel-media-driver 19.3.0: Intel Media Driver for VAAPI (iHD)
 x11-misc/kfreestyle2d 9999: Unofficial Kinesis Freestyle 2 Userspace Linux Driver
 x11-misc/twofing 0.1.2: twofing is a daemon which runs in the background and recognizes two-finger gestures performed on a touchscreen and converts them into mouse and keyboard events.
