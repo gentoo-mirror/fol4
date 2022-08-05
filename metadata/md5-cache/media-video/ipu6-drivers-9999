@@ -1,0 +1,14 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=virtual/linux-sources sys-kernel/linux-headers kernel_linux? ( sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= ) ) sys-apps/sed kernel_linux? ( virtual/linux-sources virtual/libelf )
+DESCRIPTION=Drivers for MIPI cameras through the IPU6 on Intel Tiger Lake and Alder Lake platforms.
+EAPI=8
+HOMEPAGE=https://github.com/intel/ipu6-drivers
+INHERIT=linux-mod toolchain-funcs git-r3
+IUSE=dist-kernel
+LICENSE=GPL-2
+PROPERTIES=live
+RDEPEND=kernel_linux? ( sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= ) )
+SLOT=0
+_eclasses_=toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	linux-info	dcbf4f67bc38bee48e9d69a4344e8059	linux-mod	6ff232574f0bcad33767903505553e8d	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
+_md5_=b6718a593e17ae94af951a8c1492f113
