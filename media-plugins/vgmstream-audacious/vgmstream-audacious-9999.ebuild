@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils git-r3
+inherit cmake git-r3
 
 DESCRIPTION="vgmstream decoder plugin for audacious"
 HOMEPAGE="https://github.com/losnoco/vgmstream"
@@ -18,7 +18,3 @@ IUSE=""
 
 RDEPEND="media-plugins/audacious-plugins"
 
-src_configure() {
-	local mycmakeargs=("-DUSE_FDKAAC=OFF")
-	cmake-utils_src_configure
-}
