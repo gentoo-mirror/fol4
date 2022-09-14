@@ -1,0 +1,32 @@
+# ChangeLog for dev-python/pymodbus
+# Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*pymodbus-9999 (16 Aug 2013)
+  16 Aug 2013; W. Trevor King <wking@tremily.us> pymodbus-9999.ebuild :
+  Update dependency from 'twisted' to 'twisted-core'.  The ebuild was
+  renamed in the Portage tree on 09 Aug 2013.
+
+*pymodbus-9999 (19 Apr 2013)
+  19 Apr 2013; W. Trevor King <wking@tremily.us> pymodbus-9999.ebuild :
+  Pymodbus is now (v1.2.0) versioned in Git on GitHub :).
+  Also update to EAPI 5.
+
+*pymodbus-9999 (09 Dec 2011)
+  09 Dec 2011; W. Trevor King <wking@drexel.edu> pymodbus-9999.ebuild :
+  Add ~amd64 keyword, now that I'm testing pymodbus on an AMD C-60.
+  Also update to EAPI 4.
+
+*pymodbus-9999 (27 Jul 2011)
+  27 Jul 2011; W. Trevor King <wking@drexel.edu> pymodbus-9999.ebuild :
+  - add serial USE flag.
+
+*pymodbus-9999 (19 Jul 2011)
+  19 Jul 2011; W. Trevor King <wking@drexel.edu> ChangeLog, metadata.xml, pymodbus-9999.ebuild :
+  - Created ebuild suite for pymodbus.
+  - Added initial ChangeLog which should be updated whenever the
+  package is updated in any way. This changelog is targetted to
+  users. This means that the comments should well explained and
+  written in clean English. The details about writing correct
+  changelogs are explained in the skel.ChangeLog file which you can
+  find in the root directory of the portage repository.
