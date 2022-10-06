@@ -28,7 +28,7 @@ MODULE_NAMES="gpio-ljca(updates) i2c-ljca(updates) intel_vsc(updates) ljca(updat
 	spi-ljca(updates) ov01a10(updates) ov02c10(updates)"
 
 # https://git.launchpad.net/~vicamo/+git/intel-vsc-dkms/tree/debian/patches?h=ubuntu/devel
-PATCHES=( "${S}/debian/patches/0002-ov01a10-ov02c10-add-sensor-drivers-from-ipu6-drivers.patch" )
+PATCHES=( "${S}/debian/patches/0002-hm2170-ov01a10-ov01a1s-ov02c10-add-sensor-drivers-fr.patch" )
 
 pkg_setup() {
 	linux-mod_pkg_setup
