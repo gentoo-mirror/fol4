@@ -32,7 +32,6 @@ MODULE_NAMES="	hm11b1(drivers/media/i2c:${S}:drivers/media/i2c) \
 
 # https://git.launchpad.net/~vicamo/+git/intel-vsc-dkms/tree/debian/patches?h=ubuntu/devel
 PATCHES=(	"${S}/debian/patches/0001-build-disable-ivsc-depending-sensors.patch"
-			"${S}/debian/patches/0002-build-drop-the-use-of-EXTERNAL_BUILD.patch"
 			"${S}/debian/patches/0003-build-respect-kernel_source_dir-from-dkms.patch"
 			"${S}/debian/patches/0005-compat-Remove-usage-of-the-deprecated-pci-dma-compat.patch"
 			"${S}/debian/patches/0006-compat-accommodate-to-iosys-map-API-renames.patch"
