@@ -6,8 +6,10 @@ EAPI=8
 inherit linux-mod toolchain-funcs
 
 inherit git-r3
-EGIT_REPO_URI="https://git.launchpad.net/~vicamo/+git/intel-ipu6-dkms"
-EGIT_BRANCH="ubuntu/devel"
+# EGIT_REPO_URI="https://git.launchpad.net/~vicamo/+git/intel-ipu6-dkms"
+# EGIT_BRANCH="ubuntu/devel"
+
+EGIT_REPO_URI="https://github.com/intel/ipu6-drivers.git"
 
 DESCRIPTION="Drivers for MIPI cameras through the IPU6 on Intel Tiger Lake and Alder Lake platforms."
 HOMEPAGE="https://github.com/intel/ipu6-drivers"
@@ -29,9 +31,9 @@ MODULE_NAMES="	hm11b1(drivers/media/i2c:${S}:drivers/media/i2c) \
 				intel-ipu6-psys(drivers/media/pci/intel/ipu6:${S}:drivers/media/pci/intel/ipu6)"
 
 # https://git.launchpad.net/~vicamo/+git/intel-vsc-dkms/tree/debian/patches?h=ubuntu/devel
-PATCHES=(	"${S}/debian/patches/0001-build-disable-ivsc-depending-sensors.patch"
-			"${S}/debian/patches/0003-build-fix-kernel-feature-macro-definitions.patch"
-		)
+#PATCHES=(	"${S}/debian/patches/0001-build-disable-ivsc-depending-sensors.patch"
+#			"${S}/debian/patches/0003-build-fix-kernel-feature-macro-definitions.patch"
+#		)
 
 pkg_setup() {
 	linux-mod_pkg_setup
