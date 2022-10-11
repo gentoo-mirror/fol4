@@ -21,7 +21,6 @@ IUSE=""
 DEPEND="
 	virtual/linux-sources
 	sys-kernel/linux-headers
-	sys-kernel/ivsc-driver
 "
 RDEPEND=""
 
