@@ -21,7 +21,6 @@ IUSE=""
 DEPEND="
 	virtual/linux-sources
 	sys-kernel/linux-headers
-	sys-kernel/ivsc-driver
 "
 RDEPEND=""
 
@@ -33,12 +32,31 @@ MODULE_NAMES="	hm11b1(drivers/media/i2c:${S}:drivers/media/i2c) \
 				ov2740(drivers/media/i2c:${S}:drivers/media/i2c) \
 				intel-ipu6(drivers/media/pci/intel/ipu6:${S}:drivers/media/pci/intel/ipu6) \
 				intel-ipu6-isys(drivers/media/pci/intel/ipu6:${S}:drivers/media/pci/intel/ipu6) \
-				intel-ipu6-psys(drivers/media/pci/intel/ipu6:${S}:drivers/media/pci/intel/ipu6)"
+				intel-ipu6-psys(drivers/media/pci/intel/ipu6:${S}:drivers/media/pci/intel/ipu6) \
+				mei-vsc(updates) \
+				intel_vsc(updates) \
+				i2c-ljca(updates) \
+				gpio-ljca(updates) \
+				ljca(updates) \
+				mei_ace(updates) \
+				mei_ace_debug(updates) \
+				mei_csi(updates) \
+				mei_pse(updates) \
+				spi-ljca(updates)"
 
 # https://git.launchpad.net/~vicamo/+git/intel-vsc-dkms/tree/debian/patches?h=ubuntu/devel
 #PATCHES=(	"${S}/debian/patches/0001-build-disable-ivsc-depending-sensors.patch"
 #			"${S}/debian/patches/0003-build-fix-kernel-feature-macro-definitions.patch"
 #		)
+
+
+src_prepare() {
+	default
+	git clone https://github.com/intel/ivsc-driver.git ivsc-driver
+	cp -vr ivsc-driver/backport-include ivsc-driver/drivers ivsc-driver/include .
+	rm -rf ivsc-driver
+	# sed -i s/"# export CONFIG_POWER_CTRL_LOGIC = m"/"export CONFIG_POWER_CTRL_LOGIC = m"/ "${S}/Makefile"
+}
 
 pkg_setup() {
 	linux-mod_pkg_setup
