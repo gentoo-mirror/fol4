@@ -41,7 +41,6 @@ net-vpn/openconnect-pulse-gui 9999: This script provides a wrapper around OpenCo
 net-vpn/strongswan 5.8.1_rc1: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 sys-apps/systemd 239-r1: System and service manager for Linux
 sys-apps/v86d 0.1.10-r1: A daemon to run x86 code in an emulated environment
-sys-kernel/ivsc-driver 9999: Driver for Intel Vision Sensing Controller(IVSC) on Intel Alder Lake platforms
 www-plugins/pipelight 9999: Wine-based wrapper for running Windows plugins on POSIX systems
 x11-libs/libva 2.6.0_pre1: Video Acceleration (VA) API for Linux
 x11-misc/kfreestyle2d 9999: Unofficial Kinesis Freestyle 2 Userspace Linux Driver
