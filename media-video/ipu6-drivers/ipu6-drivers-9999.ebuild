@@ -10,6 +10,8 @@ inherit git-r3
 # EGIT_BRANCH="ubuntu/devel"
 
 EGIT_REPO_URI="https://github.com/intel/ipu6-drivers.git"
+IVSC_REPO_URI="https://github.com/intel/ivsc-driver.git"
+
 
 DESCRIPTION="Drivers for MIPI cameras through the IPU6 on Intel Tiger Lake and Alder Lake platforms."
 HOMEPAGE="https://github.com/intel/ipu6-drivers"
@@ -50,11 +52,15 @@ MODULE_NAMES="	hm11b1(drivers/media/i2c:${S}:drivers/media/i2c) \
 #		)
 
 
-src_prepare() {
-	default
-	git clone https://github.com/intel/ivsc-driver.git ivsc-driver
+src_unpack() {
+	git-r3_src_unpack
+	pushd "${P}" >/dev/null || die
+	git-r3_fetch "${IVSC_REPO_URI}"
+	git-r3_checkout "${IVSC_REPO_URI}" ivsc-driver
+
 	cp -vr ivsc-driver/backport-include ivsc-driver/drivers ivsc-driver/include .
 	rm -rf ivsc-driver
+	popd >/dev/null || die
 	# sed -i s/"# export CONFIG_POWER_CTRL_LOGIC = m"/"export CONFIG_POWER_CTRL_LOGIC = m"/ "${S}/Makefile"
 }
 
