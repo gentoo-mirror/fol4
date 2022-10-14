@@ -3,6 +3,7 @@ app-crypt/wdpassport-utils 9999: WD My Passport Drive Hardware Encryption Utilit
 app-editors/laidout 9999: DTP, and experimental vector graphics tools
 app-misc/doublecmd 1.0.6: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
+app-misc/intellimouse-ctl 9999: CLI for Microsoft IntelliMouse
 dev-db/freetds 0.95.95: Tabular Datastream Library
 dev-libs/libmodbus 3.1.1: Modbus library which supports RTU communication over a serial line or a TCP link
 dev-libs/libqt5pas 1.2.9.0000000000.2.2.0: selective bind Qt to free pascal
