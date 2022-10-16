@@ -50,6 +50,7 @@ src_prepare() {
 	# find . -iname "*Makefile" -print0 | xargs -0 sed -i s:"\`freetype-config --cflags\`":"-I/usr/include/freetype2":g
 	# find . -iname "*Makefile" -print0 | xargs -0 sed -i s:"\`freetype-config --libs\`":"-lfreetype":g
 	# find . -iname "*Makefile" -print0 | xargs -0 sed -i s:"-L/usr/local/lib":"-L/usr/lib64":g
+	find . -iname "*Makefile" -print0 | xargs -0 sed -i s:"\`imlib2-config --libs\`":"\`pkg-config --libs imlib2\`":g
 }
 
 src_configure() {
