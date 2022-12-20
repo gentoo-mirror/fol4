@@ -6,7 +6,6 @@ app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
 app-misc/intellimouse-ctl 9999: CLI for Microsoft IntelliMouse
 dev-db/freetds 0.95.95: Tabular Datastream Library
 dev-libs/libmodbus 3.1.1: Modbus library which supports RTU communication over a serial line or a TCP link
-dev-libs/libqt5pas 1.2.9.0000000000.2.2.0: selective bind Qt to free pascal
 dev-perl/Email-Outlook-Message 0.919: Read Outlook .msg files
 dev-python/RPi-GPIO 0.6.2: A Python module to control the GPIO on a Raspberry Pi
 dev-python/XBee 2.3.2: XBee provides an implementation of the XBee serial communication API.
