@@ -25,6 +25,6 @@ KEYWORDS="~x86 ~amd64"
 IUSE=""
 
 RDEPEND="dev-python/pygobject
-	net-libs/webkit-gtk
+	net-libs/webkit-gtk:4
 	"
 DEPEND="${RDEPEND}"
