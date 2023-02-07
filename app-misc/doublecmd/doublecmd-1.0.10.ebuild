@@ -34,12 +34,12 @@ HOME="${PORTAGE_BUILDDIR}/homedir"
 export HOME
 src_compile(){
 	# Set temporary HOME for lazarus primary config directory
-	  ./build.sh beta qt5 || die
+	./build.sh release qt5 || die
 
 }
 
 src_install(){
-./install/linux/install.sh --install-prefix="${D}" 
+	./install/linux/install.sh --install-prefix="${D}" 
 }
 
 pkg_postinst() {
