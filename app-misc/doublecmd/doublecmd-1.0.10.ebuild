@@ -34,7 +34,7 @@ HOME="${PORTAGE_BUILDDIR}/homedir"
 export HOME
 src_compile(){
 	# Set temporary HOME for lazarus primary config directory
-	./build.sh release qt5 || die
+	bash build.sh release qt5 || die
 
 }
 
