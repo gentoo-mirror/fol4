@@ -5,6 +5,7 @@ app-misc/doublecmd 1.0.10: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
 app-misc/intellimouse-ctl 9999: CLI for Microsoft IntelliMouse
 dev-db/freetds 0.95.95: Tabular Datastream Library
+dev-java/openwebstart-bin 1.7.0: Run Web Start based applications after the release of Java 11
 dev-libs/libmodbus 3.1.1: Modbus library which supports RTU communication over a serial line or a TCP link
 dev-perl/Email-Outlook-Message 0.919: Read Outlook .msg files
 dev-python/RPi-GPIO 0.6.2: A Python module to control the GPIO on a Raspberry Pi
