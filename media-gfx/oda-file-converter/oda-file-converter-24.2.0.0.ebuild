@@ -2,22 +2,16 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-inherit eutils multilib
+inherit eutils multilib desktop
 
 DESCRIPTION="Converts files between the .dwg and .dxf file formats"
 HOMEPAGE="http://www.opendesign.com/guestfiles"
 
-URL_64="https://download.opendesign.com/guestfiles/ODAFileConverter/ODAFileConverter_QT5_lnxX64_4.7dll.deb"
-URL_32="https://download.opendesign.com/guestfiles/ODAFileConverter/ODAFileConverter_QT5_lnxX86_4.7dll.deb"
-
-SRC_URI="
-	amd64? ( ${URL_64} )
-	x86? ( ${URL_32} )
-"
+SRC_URI="https://download.opendesign.com/guestfiles/Demo/ODAFileConverter_QT5_lnxX64_8.3dll_24.2.deb"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 
 RESTRICT="mirror"
 
@@ -32,14 +26,13 @@ S="${WORKDIR}"
 
 src_unpack() {
 	unpack $A
-	unpack ./data.tar.gz
+	unpack ./data.tar.xz
 	cd ./usr
 }
 
 src_install() {
 	exeinto /usr/bin
 	doexe usr/bin/ODAFileConverter
-	ODAFileConverter_${PV}
 	exeinto /usr/bin/ODAFileConverter_${PV}
 	doexe usr/bin/ODAFileConverter_${PV}/*
 	domenu usr/share/applications/ODAFileConverter_${PV}.desktop
