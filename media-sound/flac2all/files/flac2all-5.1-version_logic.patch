@@ -1,0 +1,14 @@
+--- a/setup.py	2020-01-23 12:31:41.000000000 +0100
++++ b/setup.py	2023-05-06 18:52:20.268644142 +0200
+@@ -14,10 +14,7 @@
+ 
+ here = path.abspath(path.dirname(__file__))
+ 
+-with open("./flac2all_pkg/version", 'r') as fd:
+-    vers = fd.read()
+-    vers = str(vers.strip())
+-    vers = vers.replace("test.", "")  # Remove test marker for publishing to test repo
++vers = "5.1"
+ 
+ setup(
+     name="flac2all",
