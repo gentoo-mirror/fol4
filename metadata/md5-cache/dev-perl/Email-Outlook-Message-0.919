@@ -9,5 +9,5 @@ KEYWORDS=alpha amd64 ~arm hppa ia64 ~mips ppc ppc64 ~s390 ~sh sparc x86 ~amd64-l
 LICENSE=|| ( Artistic GPL-1+ )
 RDEPEND=dev-perl/Email-LocalDelivery dev-perl/Email-MIME dev-perl/Email-Sender dev-perl/IO-All dev-perl/IO-String dev-perl/Module-Build dev-perl/OLE-StorageLite virtual/perl-Getopt-Long virtual/perl-Pod-Parser dev-lang/perl:=
 SLOT=0
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	perl-functions	c3fca037246e877693badea0df3b0ef8	toolchain-funcs	fc2af1957597c539ae6e48f82bd43125	multilib	c19072c3cd7ac5cb21de013f7e9832e0	perl-module	dd4003d3308d7cad2b2d4e2b8298ffb2
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	perl-functions	c3fca037246e877693badea0df3b0ef8	toolchain-funcs	8e3fb781f3258ae2757d1dfc2c7c170e	multilib	c19072c3cd7ac5cb21de013f7e9832e0	perl-module	dd4003d3308d7cad2b2d4e2b8298ffb2
 _md5_=c03ac59825b772e7fc7c3c71501d84ef
