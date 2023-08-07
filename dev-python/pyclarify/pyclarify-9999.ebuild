@@ -22,7 +22,7 @@ DESCRIPTION="PyClarify helps users of Clarify to easily read, write and manipula
 HOMEPAGE="https://github.com/clarify/pyclarify"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS=""
 IUSE=""
 
 # S="${WORKDIR}/${P/-/_}"
