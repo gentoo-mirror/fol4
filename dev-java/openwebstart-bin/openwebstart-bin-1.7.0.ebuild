@@ -1,13 +1,13 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 MY_PV=${PV//'.'/'_'}
 
 README_GENTOO_SUFFIX="-r1"
 
-inherit eutils unpacker desktop readme.gentoo-r1 xdg-utils
+inherit unpacker desktop readme.gentoo-r1 xdg-utils
 
 DESCRIPTION="Run Web Start based applications after the release of Java 11"
 HOMEPAGE="https://openwebstart.com/"

@@ -1,8 +1,8 @@
 # Copyright 1999-2020 Christian Affolter <c.affolter@purplehaze.ch>
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
-inherit eutils flag-o-matic desktop xdg-utils
+EAPI=8
+inherit flag-o-matic desktop xdg-utils
 
 DESCRIPTION="butt is an easy to use, multi OS streaming tool"
 HOMEPAGE="http://danielnoethen.de/butt/"

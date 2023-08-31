@@ -1,8 +1,8 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
-inherit eutils autotools flag-o-matic
+EAPI=8
+inherit autotools flag-o-matic
 
 DESCRIPTION="Meanwhile (Sametime protocol) library"
 HOMEPAGE="http://meanwhile.sourceforge.net/"
