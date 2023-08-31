@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=>=dev-lang/lazarus-1.8
+DESCRIPTION=Cross Platform file manager.
+EAPI=8
+HOMEPAGE=https://doublecmd.sourceforge.io/
+INHERIT=xdg-utils
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/lazarus-1.8 sys-apps/dbus dev-libs/glib sys-libs/ncurses x11-libs/libX11 >=dev-qt/qtcore-5.6 >=dev-libs/libqt5pas-1.2.8
+RESTRICT=mirror
+SLOT=0
+SRC_URI=mirror://sourceforge/doublecmd/doublecmd-1.0.11-src.tar.gz
+_eclasses_=xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=5575dc82fbd57927b816517342701ac5

@@ -1,8 +1,11 @@
 app-backup/btrfs-sxbackup 0.6.11: Incremental btrfs snapshot backups with push/pull support via SSH
 app-crypt/wdpassport-utils 9999: WD My Passport Drive Hardware Encryption Utility for Linux
 app-editors/laidout 9999: DTP, and experimental vector graphics tools
+app-misc/doublecmd 1.0.11: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
 app-misc/intellimouse-ctl 9999: CLI for Microsoft IntelliMouse
+dev-db/freetds 0.95.95: Tabular Datastream Library
+dev-java/openwebstart-bin 1.7.0: Run Web Start based applications after the release of Java 11
 dev-libs/libmodbus 3.1.1: Modbus library which supports RTU communication over a serial line or a TCP link
 dev-perl/Email-Outlook-Message 0.919: Read Outlook .msg files
 dev-python/RPi-GPIO 0.6.2: A Python module to control the GPIO on a Raspberry Pi
@@ -23,19 +26,25 @@ dev-python/python-MCP342x 0.3.3: A Python module to control the GPIO on a Raspbe
 dev-python/python-holidays 0.8.1: Generate and work with holidays in Python
 dev-python/starlette 0.14.0: The little ASGI framework that shines
 dev-python/update-checker 0.16: A python module that will check for package updates.
+media-gfx/oda-file-converter 24.2.0.0: Converts files between the .dwg and .dxf file formats
 media-libs/libshout 2.4.1 9999: library for connecting and sending data to icecast servers
 media-plugins/vgmstream-audacious 9999: vgmstream decoder plugin for audacious
+media-sound/butt 0.1.29-r1: butt is an easy to use, multi OS streaming tool
 media-sound/flac2all 5.1 5.9999: A multi-process batch flac converter. For music lovers with large collections :-)
 media-video/ipu6-drivers 9999: Drivers for MIPI cameras through the IPU6 on Intel Tiger Lake and Alder Lake platforms.
 media-video/libva-utils 2.6.0_pre1: Collection of utilities and tests for VA-API
 media-video/mkchromecast 0.3.8.1 9999: Cast Audio/Video to your Google Cast and Sonos Devices
 net-dialup/forticlientsslvpn 4.4.2329: SSL VPN Client for Fortinet
+net-im/bitlbee-discord 9999: Discord protocol plugin for BitlBee
 net-irc/sopel 6.6.3: An easy-to-use and highly extensible IRC Bot framework
+net-libs/meanwhile 1.1.1: Meanwhile (Sametime protocol) library
+net-misc/rdesktop 9999: A Remote Desktop Protocol Client
 net-print/utax-ta-ppds 20140115: PPD description files and filter for UTAX and Triump-Adler (both based on Kyocera) printers
 net-proxy/dante 1.4.1-r1: A free socks4,5 and msproxy implementation
 net-vpn/openconnect-pulse-gui 9999: This script provides a wrapper around OpenConnect which allows a user to log in through a WebKitGTK2 window.
 net-vpn/strongswan 5.8.1_rc1: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 sys-apps/systemd 239-r1: System and service manager for Linux
+sys-apps/v86d 0.1.10-r1: A daemon to run x86 code in an emulated environment
 www-plugins/pipelight 9999: Wine-based wrapper for running Windows plugins on POSIX systems
 x11-libs/libva 2.6.0_pre1: Video Acceleration (VA) API for Linux
 x11-misc/kfreestyle2d 9999: Unofficial Kinesis Freestyle 2 Userspace Linux Driver
