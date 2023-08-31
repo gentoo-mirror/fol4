@@ -1,9 +1,9 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-inherit autotools eutils flag-o-matic linux-info multilib
+inherit autotools flag-o-matic linux-info multilib
 
 DESCRIPTION="A daemon to run x86 code in an emulated environment"
 HOMEPAGE="https://dev.gentoo.org/~spock/projects/uvesafb/"

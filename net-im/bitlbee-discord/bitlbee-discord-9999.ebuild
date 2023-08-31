@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=7
+EAPI=8
 
-inherit eutils autotools git-r3
+inherit autotools git-r3
 
 DESCRIPTION="Discord protocol plugin for BitlBee"
 HOMEPAGE="https://github.com/sm00th/bitlbee-discord"
