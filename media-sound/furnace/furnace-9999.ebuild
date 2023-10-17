@@ -7,7 +7,6 @@ inherit cmake git-r3
 
 DESCRIPTION="a multi-system chiptune tracker compatible with DefleMask modules"
 HOMEPAGE="https://github.com/tildearrow/furnace/"
-# SRC_URI="http://downloads.xiph.org/releases/${PN}/${P}.tar.gz"
 
 EGIT_REPO_URI="https://github.com/tildearrow/furnace.git"
 
@@ -37,13 +36,13 @@ DEPEND="${RDEPEND}
 src_configure() {
     # -DSYSTEM_FREETYPE=ON does not work
     local mycmakeargs=(
-    	-DSYSTEM_FFTW=ON
-    	-DSYSTEM_FMT=ON
-    	-DSYSTEM_LIBSNDFILE=ON
-    	-DSYSTEM_PORTAUDIO=ON
-    	-DSYSTEM_RTMIDI=ON
-    	-DSYSTEM_ZLIB=ON
-    	-DSYSTEM_SDL2=ON
+		-DSYSTEM_FFTW=ON
+		-DSYSTEM_FMT=ON
+		-DSYSTEM_LIBSNDFILE=ON
+		-DSYSTEM_PORTAUDIO=ON
+		-DSYSTEM_RTMIDI=ON
+		-DSYSTEM_ZLIB=ON
+		-DSYSTEM_SDL2=ON
 		-DWITH_JACK="$(usex jack)"
     )
     cmake_src_configure
