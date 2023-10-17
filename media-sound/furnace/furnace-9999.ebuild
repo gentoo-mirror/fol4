@@ -17,13 +17,13 @@ SLOT="0"
 IUSE="jack"
 
 RDEPEND="
-	media-libs/libogg
 "
+# media-libs/freetype does not work
+
 DEPEND="${RDEPEND}
 	jack? ( media-sound/jack )
 	dev-libs/libfmt
 	media-libs/alsa-lib
-	media-libs/freetype
 	media-libs/libsdl2
 	media-libs/libsndfile
 	media-libs/portaudio
@@ -35,10 +35,10 @@ DEPEND="${RDEPEND}
 "
 
 src_configure() {
+    # -DSYSTEM_FREETYPE=ON does not work
     local mycmakeargs=(
     	-DSYSTEM_FFTW=ON
     	-DSYSTEM_FMT=ON
-    	-DSYSTEM_FREETYPE=ON
     	-DSYSTEM_LIBSNDFILE=ON
     	-DSYSTEM_PORTAUDIO=ON
     	-DSYSTEM_RTMIDI=ON
