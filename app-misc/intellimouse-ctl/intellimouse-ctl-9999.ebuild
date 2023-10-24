@@ -15,7 +15,7 @@ RESTRICT="test"
 KEYWORDS="~x86 ~amd64"
 SLOT="0"
 IUSE=""
-RDEPEND=">=dev-python/cython-hidapi-9999[${PYTHON_USEDEP}]"
+RDEPEND=">=dev-python/hidapi-0.9.0[${PYTHON_USEDEP}]"
 
 DEPEND="${RDEPEND}"
 
