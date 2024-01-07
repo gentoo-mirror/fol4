@@ -20,6 +20,7 @@ fi
 DISTUTILS_USE_PEP517=setuptools
 DESCRIPTION="PyClarify helps users of Clarify to easily read, write and manipulate data in Clarify."
 HOMEPAGE="https://github.com/clarify/pyclarify"
+RDEPEND="dev-python/pydantic[${PYTHON_USEDEP}]"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
