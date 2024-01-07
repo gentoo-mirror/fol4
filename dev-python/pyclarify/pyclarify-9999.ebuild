@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=7
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{8..12} )
 RESTRICT="mirror"
 
 inherit distutils-r1
@@ -20,6 +20,7 @@ fi
 DISTUTILS_USE_PEP517=setuptools
 DESCRIPTION="PyClarify helps users of Clarify to easily read, write and manipulate data in Clarify."
 HOMEPAGE="https://github.com/clarify/pyclarify"
+RDEPEND="<dev-python/pydantic-2[${PYTHON_USEDEP}]"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
