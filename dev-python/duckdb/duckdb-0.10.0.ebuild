@@ -21,13 +21,13 @@ RDEPEND="dev-python/numpy[${PYTHON_USEDEP}]
 	dev-python/pybind11[${PYTHON_USEDEP}]
 	dev-python/pandas[${PYTHON_USEDEP}]
 	dev-python/pyarrow[${PYTHON_USEDEP}]
+	=dev-db/duckdb-${PV}*
 "
 DEPEND="${RDEPEND}"
 
 RESTRICT="mirror"
 
-#PATCHES=( "${FILESDIR}"/${PN}-0.8.1-drop-py36.patch
-#		  "${FILESDIR}"/${PN}-0.8.1-return-type.patch
-#		)
+DUCKDB_BINARY_DIR="/usr/lib64"
+
 
 distutils_enable_tests pytest
