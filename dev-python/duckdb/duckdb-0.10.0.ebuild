@@ -30,3 +30,8 @@ DUCKDB_BINARY_DIR="/usr/lib64"
 
 
 distutils_enable_tests pytest
+
+src_install() {
+	distutils-r1_src_install
+	rm -vr "${D}/usr/share/doc/duckdb-${PV}"
+}
