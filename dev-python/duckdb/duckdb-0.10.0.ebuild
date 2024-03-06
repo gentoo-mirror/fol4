@@ -21,7 +21,6 @@ RDEPEND="dev-python/numpy[${PYTHON_USEDEP}]
 	dev-python/pybind11[${PYTHON_USEDEP}]
 	dev-python/pandas[${PYTHON_USEDEP}]
 	dev-python/pyarrow[${PYTHON_USEDEP}]
-	=dev-db/duckdb-${PV}*
 "
 DEPEND="${RDEPEND}"
 
