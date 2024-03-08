@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{8,9,10} )
+PYTHON_COMPAT=( python3_{8,9,10,11,12} )
 
 SRC_URI=https://github.com/muammar/mkchromecast/archive/${PV}.tar.gz
 if [[ ${PV} == *9999 ]]; then
