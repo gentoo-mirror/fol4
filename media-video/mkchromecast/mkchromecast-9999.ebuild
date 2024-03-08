@@ -27,7 +27,7 @@ IUSE="alsa ffmpeg gstreamer nodejs +pulseaudio qt5 youtube-dl"
 RDEPEND="	gstreamer? ( media-libs/gstreamer )
 			pulseaudio? ( media-sound/pulseaudio )
 			alsa? ( media-sound/alsa-utils )
-			youtube-dl? ( net-misc/youtube-dl[${PYTHON_USEDEP}] )
+			youtube-dl? ( net-misc/yt-dlp[${PYTHON_USEDEP}] )
 			nodejs? ( net-libs/nodejs )"
 
 DEPEND="${RDEPEND}
