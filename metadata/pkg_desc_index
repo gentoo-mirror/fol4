@@ -12,7 +12,7 @@ dev-perl/Email-Outlook-Message 0.919: Read Outlook .msg files
 dev-python/RPi-GPIO 0.6.2: A Python module to control the GPIO on a Raspberry Pi
 dev-python/XBee 2.3.2: XBee provides an implementation of the XBee serial communication API.
 dev-python/duckdb 0.10.0: DuckDB embedded database
-dev-python/fastapi 0.63.0: FastAPI framework, high performance, easy to learn, fast to code, ready for production
+dev-python/fastapi 0.110.0: FastAPI framework, high performance, easy to learn, fast to code, ready for production
 dev-python/paho-mqtt 1.3.1: A client class with support for both MQTT v3.1 and v3.1.1 on Python 2.7 or 3.x.
 dev-python/praw 5.4.0: PRAW, an acronym for "Python Reddit API Wrapper", is a python package that allows for simple access to reddit\'s API.
 dev-python/prawcore 0.14.0: Low-level communication layer for PRAW 4+.
