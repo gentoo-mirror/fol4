@@ -22,6 +22,6 @@ IUSE=""
 RESTRICT="mirror"
 
 RDEPEND="
-	<dev-python/starlette-0.14.1[${PYTHON_USEDEP}]
+	<dev-python/starlette-0.37.0[${PYTHON_USEDEP}]
 	dev-python/pydantic[${PYTHON_USEDEP}]
 "
