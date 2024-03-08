@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{7,8,9,10} )
+PYTHON_COMPAT=( python3_{7,8,9,10,11,12} )
 
 DOCS_BUILDER="mkdocs"
 DOCS_DEPEND="dev-python/mkdocs-material"
@@ -25,7 +25,7 @@ KEYWORDS="~amd64 ~x86"
 # ModuleNotFoundError: No module named 'graphql.execution.executors'
 # Now graphql is at the newest version and this still doesn't work :(
 # though there are less errors now
-RESTRICT="test"
+RESTRICT="test mirror"
 
 DEPEND="test? (
 	dev-python/aiofiles[${PYTHON_USEDEP}]
