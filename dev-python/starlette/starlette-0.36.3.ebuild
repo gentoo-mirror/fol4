@@ -10,6 +10,7 @@ DOCS_DEPEND="dev-python/mkdocs-material"
 DOCS_AUTODOC=1
 
 inherit distutils-r1 docs optfeature
+DISTUTILS_USE_PEP517=hatchling
 
 DESCRIPTION="The little ASGI framework that shines"
 HOMEPAGE="
@@ -39,14 +40,14 @@ DEPEND="test? (
 	dev-python/ujson[${PYTHON_USEDEP}]
 )"
 
-python_prepare_all() {
-	# do not install LICENSE to /usr/
-	sed -i -e '/data_files/d' setup.py || die
-	# do not depend on pytest-cov
-	sed -i -e '/--cov/d' setup.cfg || die
-
-	distutils-r1_python_prepare_all
-}
+# python_prepare_all() {
+#	# do not install LICENSE to /usr/
+#	sed -i -e '/data_files/d' setup.py || die
+#	# do not depend on pytest-cov
+#	sed -i -e '/--cov/d' setup.cfg || die
+#
+#	distutils-r1_python_prepare_all
+#}
 
 pkg_postinst() {
 	optfeature "Required if you want to use FileResponse or StaticFiles" dev-python/aiofiles
