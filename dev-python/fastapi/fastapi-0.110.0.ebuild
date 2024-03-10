@@ -8,7 +8,7 @@ PYTHON_REQ_USE="threads(+)"
 
 inherit distutils-r1 pypi
 
-DISTUTILS_USE_PEP517=yes
+DISTUTILS_USE_PEP517=hatchling
 
 DESCRIPTION="FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 HOMEPAGE="https://fastapi.tiangolo.com/"
@@ -19,7 +19,7 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~x64-macos"
 IUSE=""
 
-RESTRICT="mirror"
+RESTRICT="mirror test"
 
 RDEPEND="
 	<dev-python/starlette-0.37.0[${PYTHON_USEDEP}]
