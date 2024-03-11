@@ -1,0 +1,14 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install unpack
+DEPEND=media-video/ffmpeg media-plugins/audacious-plugins
+DESCRIPTION=vgmstream - A library for playback of various streamed audio formats used in video games.
+EAPI=7
+HOMEPAGE=https://github.com/losnoco/vgmstream
+INHERIT=git-r3
+KEYWORDS=~amd64 ~x86
+LICENSE=public-domain
+PROPERTIES=live
+RESTRICT=network-sandbox
+SLOT=0
+_eclasses_=git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
+_md5_=7752b2102bb9792cdf311b878f6d041d
