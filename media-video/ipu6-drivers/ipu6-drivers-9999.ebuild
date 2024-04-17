@@ -31,7 +31,6 @@ MODULE_NAMES="	hm11b1(drivers/media/i2c:${S}:drivers/media/i2c) \
 				ov01a10(drivers/media/i2c:${S}:drivers/media/i2c) \
 				ov01a1s(drivers/media/i2c:${S}:drivers/media/i2c) \
 				ov02c10(drivers/media/i2c:${S}:drivers/media/i2c) \
-				ov2740(drivers/media/i2c:${S}:drivers/media/i2c) \
 				intel-ipu6(drivers/media/pci/intel/ipu6:${S}:drivers/media/pci/intel/ipu6) \
 				intel-ipu6-isys(drivers/media/pci/intel/ipu6:${S}:drivers/media/pci/intel/ipu6) \
 				intel-ipu6-psys(drivers/media/pci/intel/ipu6:${S}:drivers/media/pci/intel/ipu6) \
