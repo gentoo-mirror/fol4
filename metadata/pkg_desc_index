@@ -26,6 +26,7 @@ dev-python/python-MCP342x 0.3.3: A Python module to control the GPIO on a Raspbe
 dev-python/python-holidays 0.8.1: Generate and work with holidays in Python
 dev-python/starlette 0.36.3: The little ASGI framework that shines
 dev-python/update-checker 0.16: A python module that will check for package updates.
+games-util/evdev-joystick-calibration 9999: Reusable constraint types to use with typing.Annotated
 media-gfx/oda-file-converter 24.2.0.0: Converts files between the .dwg and .dxf file formats
 media-libs/libshout 2.4.1 9999: library for connecting and sending data to icecast servers
 media-sound/butt 0.1.29-r1: butt is an easy to use, multi OS streaming tool
