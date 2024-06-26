@@ -8,7 +8,7 @@ inherit xdg-utils
 ABBREV="doublecmd"
 DESCRIPTION="Cross Platform file manager."
 HOMEPAGE="https://doublecmd.sourceforge.io/"
-SRC_URI="mirror://sourceforge/${ABBREV}/${ABBREV}-${PV}-src.tar.gz"
+SRC_URI="https://github.com/${ABBREV}/${ABBREV}/archive/refs/tags/v${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -16,15 +16,14 @@ KEYWORDS="~amd64 ~x86"
 
 RESTRICT="mirror"
 
-DEPEND=">=dev-lang/lazarus-1.8"
+DEPEND=">=dev-lang/lazarus-1.8[qt6]"
 RDEPEND="
 	${DEPEND}
 	sys-apps/dbus
 	dev-libs/glib
 	sys-libs/ncurses
-	x11-libs/libX11
-	>=dev-qt/qtcore-5.6
-	>=dev-libs/libqt5pas-1.2.8
+	>=dev-qt/qtbase-6
+	dev-libs/libqt6pas
 "
 
 
@@ -34,7 +33,7 @@ HOME="${PORTAGE_BUILDDIR}/homedir"
 export HOME
 src_compile(){
 	# Set temporary HOME for lazarus primary config directory
-	bash build.sh release qt5 || die
+	bash build.sh release qt6 || die
 
 }
 
