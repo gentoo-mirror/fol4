@@ -8,7 +8,7 @@ inherit git-r3 distutils-r1
 
 DESCRIPTION="CLI for Microsoft IntelliMouse"
 HOMEPAGE="https://github.com/K-Visscher/intellimouse-ctl/"
-EGIT_REPO_URI="https://github.com/K-Visscher/intellimouse-ctl/"
+EGIT_REPO_URI="https://gitlab.com/madsl/intellimouse-ctl/"
 LICENSE="GPL-3"
 RESTRICT="test"
 
