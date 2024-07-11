@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=dev-libs/openssl media-gfx/graphicsmagick media-libs/freetype media-libs/ftgl media-libs/gegl:0.4 media-libs/harfbuzz media-libs/imlib2 media-libs/lcms media-libs/libpng net-print/cups sys-libs/readline sys-libs/zlib x11-base/xorg-server x11-libs/cairo
 RESTRICT=mirror
 SLOT=0
-_eclasses_=git-r3	fbb2889c81f3a05910c1524db69425c1
+_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
 _md5_=f1581abaf48c2be83dc932ce8ff11643
