@@ -1,7 +1,7 @@
 app-backup/btrfs-sxbackup 0.6.11: Incremental btrfs snapshot backups with push/pull support via SSH
 app-crypt/wdpassport-utils 9999: WD My Passport Drive Hardware Encryption Utility for Linux
 app-editors/laidout 9999: DTP, and experimental vector graphics tools
-app-misc/doublecmd 1.1.17: Cross Platform file manager.
+app-misc/doublecmd 1.1.19: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
 app-misc/intellimouse-ctl 9999: CLI for Microsoft IntelliMouse
 dev-db/duckdb 0.10.0: DuckDB embedded database
