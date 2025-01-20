@@ -9,6 +9,6 @@ LICENSE=GPL-2
 RDEPEND=>=dev-lang/lazarus-1.8[qt6] sys-apps/dbus dev-libs/glib sys-libs/ncurses >=dev-qt/qtbase-6 dev-libs/libqt6pas
 RESTRICT=mirror
 SLOT=0
-SRC_URI=https://github.com/doublecmd/doublecmd/archive/refs/tags/v1.1.19.tar.gz
+SRC_URI=https://github.com/doublecmd/doublecmd/archive/refs/tags/v1.1.22.tar.gz
 _eclasses_=xdg-utils	42869b3c8d86a70ef3cf75165a395e09
 _md5_=cf8fe1fbf30a2b6804b47a229dc62040
