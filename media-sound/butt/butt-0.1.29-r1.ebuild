@@ -5,8 +5,8 @@ EAPI=8
 inherit flag-o-matic desktop xdg-utils
 
 DESCRIPTION="butt is an easy to use, multi OS streaming tool"
-HOMEPAGE="http://danielnoethen.de/butt/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+HOMEPAGE="https://danielnoethen.de/butt/"
+SRC_URI="https://danielnoethen.de/${PN}/release/${PV}/${P}.tar.gz"
 
 RESTRICT="mirror"
 LICENSE="GPL-2+"
