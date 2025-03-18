@@ -1,0 +1,14 @@
+[Unit]
+Description=NFSv2 pcnfsd
+DefaultDependencies=no
+Requires=rpc_pipefs.target
+After=rpc_pipefs.target local-fs.target
+
+BindsTo=nfs-server.service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/rpc.pcnfsd
+
+[Install]
+WantedBy=multi-user.target
