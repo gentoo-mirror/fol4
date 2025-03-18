@@ -1,0 +1,16 @@
+diff --git a/pcnfsd_svc.c b/pcnfsd_svc.c
+index 3c98fb5..041c95e 100644
+--- a/pcnfsd_svc.c
++++ b/pcnfsd_svc.c
+@@ -441,9 +441,9 @@ getcallername()
+         struct sockaddr_in actual;
+         struct hostent *hp;
+         static struct in_addr prev;
+-	static char cname[128];
++        static char cname[128];
+ 
+-        actual = *svc_getcaller(caller);
++        actual = *((struct sockaddr_in*)svc_getcaller(caller));
+ 
+         if (memcmp((char *)&actual.sin_addr, (char *)&prev,
+ 		 sizeof(struct in_addr)) == 0)
