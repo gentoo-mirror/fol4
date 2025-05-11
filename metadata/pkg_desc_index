@@ -28,6 +28,7 @@ media-video/libva-utils 2.6.0_pre1: Collection of utilities and tests for VA-API
 media-video/mkchromecast 0.3.8.1 9999: Cast Audio/Video to your Google Cast and Sonos Devices
 net-dialup/forticlientsslvpn 4.4.2329: SSL VPN Client for Fortinet
 net-fs/linux-pcnfsd2 1.6.643.1: Linux PC-NFS daemon
+net-fs/nfs-utils 2.3.4 2.5.4-r4: NFS client and server daemons
 net-im/bitlbee-discord 9999: Discord protocol plugin for BitlBee
 net-libs/meanwhile 1.1.1: Meanwhile (Sametime protocol) library
 net-misc/rdesktop 9999: A Remote Desktop Protocol Client
