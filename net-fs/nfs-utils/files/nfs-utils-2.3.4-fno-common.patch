@@ -1,0 +1,77 @@
+diff --git a/utils/mountd/v4root.c b/utils/mountd/v4root.c
+index d735dbfe192d..dd9828eb0c11 100644
+--- a/utils/mountd/v4root.c
++++ b/utils/mountd/v4root.c
+@@ -28,8 +28,6 @@
+ #include "v4root.h"
+ #include "pseudoflavors.h"
+ 
+-int v4root_needed;
+-
+ static nfs_export pseudo_root = {
+ 	.m_next = NULL,
+ 	.m_client = NULL,
+diff --git a/utils/nfsdcld/cld-internal.h b/utils/nfsdcld/cld-internal.h
+index 05f01be2105a..cc283dae9dbf 100644
+--- a/utils/nfsdcld/cld-internal.h
++++ b/utils/nfsdcld/cld-internal.h
+@@ -35,10 +35,10 @@ struct cld_client {
+ 	} cl_u;
+ };
+ 
+-uint64_t current_epoch;
+-uint64_t recovery_epoch;
+-int first_time;
+-int num_cltrack_records;
+-int num_legacy_records;
++extern uint64_t current_epoch;
++extern uint64_t recovery_epoch;
++extern int first_time;
++extern int num_cltrack_records;
++extern int num_legacy_records;
+ 
+ #endif /* _CLD_INTERNAL_H_ */
+diff --git a/utils/nfsdcld/nfsdcld.c b/utils/nfsdcld/nfsdcld.c
+index 2ad1001988d2..be6556262504 100644
+--- a/utils/nfsdcld/nfsdcld.c
++++ b/utils/nfsdcld/nfsdcld.c
+@@ -69,6 +69,12 @@ static int 		inotify_fd = -1;
+ static struct event	pipedir_event;
+ static bool old_kernel = false;
+ 
++uint64_t current_epoch;
++uint64_t recovery_epoch;
++int first_time;
++int num_cltrack_records;
++int num_legacy_records;
++
+ static struct option longopts[] =
+ {
+ 	{ "help", 0, NULL, 'h' },
+diff --git a/utils/statd/statd.c b/utils/statd/statd.c
+index 8eef2ff24fe8..e4a1df43b73f 100644
+--- a/utils/statd/statd.c
++++ b/utils/statd/statd.c
+@@ -67,6 +67,7 @@ static struct option longopts[] =
+ };
+ 
+ extern void sm_prog_1 (struct svc_req *, register SVCXPRT *);
++stat_chge	SM_stat_chge;
+ 
+ #ifdef SIMULATIONS
+ extern void simulator (int, char **);
+diff --git a/utils/statd/statd.h b/utils/statd/statd.h
+index 231ac7e0764b..bb1fecbb6a51 100644
+--- a/utils/statd/statd.h
++++ b/utils/statd/statd.h
+@@ -41,7 +41,7 @@ extern void	load_state(void);
+ /*
+  * Host status structure and macros.
+  */
+-stat_chge		SM_stat_chge;
++extern stat_chge	SM_stat_chge;
+ #define MY_NAME		SM_stat_chge.mon_name
+ #define MY_STATE	SM_stat_chge.state
+ 
+-- 
+2.24.1
