@@ -1,7 +1,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # Based on https://aur.archlinux.org/packages/forticlientsslvpn/
 
-EAPI=7
+EAPI=8
 DESCRIPTION="SSL VPN Client for Fortinet"
 HOMEPAGE="http://www.forticlient.com/"
 SRC_URI="https://github.com/mcereda/forticlientsslvpn/raw/master/tarball/forticlientsslvpn_linux_4.4.2329.tar.gz"

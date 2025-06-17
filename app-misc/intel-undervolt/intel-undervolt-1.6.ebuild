@@ -1,7 +1,7 @@
 # Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 DESCRIPTION="Undervolt Intel CPUs under Linux"
 HOMEPAGE="https://github.com/kitsunyan/intel-undervolt"
