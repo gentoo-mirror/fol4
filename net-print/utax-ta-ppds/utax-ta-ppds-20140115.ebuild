@@ -1,7 +1,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # Copyright 1999-2015 Gentoo Foundation
 
-EAPI=7
+EAPI=8
 DESCRIPTION="PPD description files and filter for UTAX and Triump-Adler (both based on Kyocera) printers"
 HOMEPAGE="http://www.triumph-adler.com/"
 SRC_URI="https://www.triumph-adler.de/resource/blob/130194/d317ddb2d4689ba40b3d24a409bf5601/talinuxpackages-ccd-clp-20140115-tar-data.gz -> ${P}.tar.gz"

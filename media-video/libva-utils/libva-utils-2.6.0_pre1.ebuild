@@ -1,7 +1,7 @@
 # Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 # Weird, the 2.6.0pre1 tar gz is just libva, not utils. get tag from git instead
 if [[ ${PV} = *9999* ]] || [[ ${PV} = 2.6.0_pre1 ]] ; then # Live ebuild
