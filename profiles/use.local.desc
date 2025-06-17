@@ -11,6 +11,13 @@ media-video/libva-utils:drm - Enables VA/DRM API support.
 net-misc/rdesktop:kerberos - Enable CredSPP support + Kerberos authentication with net-libs/libgssglue
 net-misc/rdesktop:pcsc-lite - Enable smartcard support with sys-apps/pcsc-lite driver
 net-misc/rdesktop:xrandr - Enable XRandR window extension support
+net-vpn/openvpn:dco - Enable support for kernel data channel offload
+net-vpn/openvpn:down-root - Enable the down-root plugin
+net-vpn/openvpn:iproute2 - Enabled iproute2 support instead of net-tools
+net-vpn/openvpn:mbedtls - Use mbed TLS as the backend crypto library
+net-vpn/openvpn:openssl - Use OpenSSL as the backend crypto library
+net-vpn/openvpn:pkcs11 - Enable PKCS#11 smartcard support
+net-vpn/openvpn:plugins - Enable the OpenVPN plugin system
 net-vpn/strongswan:constraints - Enable advanced X.509 constraint checking plugin
 net-vpn/strongswan:dhcp - Enable server support for querying virtual IP addresses for clients from a DHCP server. (IKEv2 only)
 net-vpn/strongswan:eap - Enable support for the different EAP modules that are supported

@@ -2,7 +2,7 @@ BDEPEND=net-libs/rpcsvc-proto virtual/pkgconfig sys-devel/gnuconfig >=app-portag
 DEFINED_PHASES=compile configure install postinst prepare
 DEPEND=>=dev-db/sqlite-3.3 dev-libs/libxml2 net-libs/libtirpc:= >=net-nds/rpcbind-0.2.4 sys-fs/e2fsprogs caps? ( sys-libs/libcap ) ldap? ( net-nds/openldap ) libmount? ( sys-apps/util-linux ) nfsv4? ( dev-libs/libevent:= >=sys-apps/keyutils-1.5.9 kerberos? ( >=net-libs/libtirpc-0.2.4-r1[kerberos] app-crypt/mit-krb5 ) ) nfsv41? ( sys-fs/lvm2 ) tcpd? ( sys-apps/tcp-wrappers ) uuid? ( sys-apps/util-linux )
 DESCRIPTION=NFS client and server daemons
-EAPI=7
+EAPI=8
 HOMEPAGE=http://linux-nfs.org/
 INHERIT=autotools flag-o-matic multilib systemd
 IUSE=caps ipv6 junction kerberos ldap +libmount nfsdcld +nfsidmap +nfsv4 nfsv41 selinux tcpd +uuid
@@ -14,4 +14,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/nfs/nfs-utils-2.3.4.tar.bz2
 _eclasses_=gnuconfig	ddeb9f8caff1b5f71a09c75b7534df79	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	libtool	c81bd096be5f4c82f4e8f156ef112402	autotools	955b29ccd82c1df4755e5f37748d2fa6	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multilib	b2a329026f2e404e9e371097dda47f96	systemd	a964c0cbe818b5729da1dbfcee5be861
-_md5_=75e478ae2e1425bd87805763b9f83743
+_md5_=4bc8334ea2e84536e3cf95b0d3daff7b

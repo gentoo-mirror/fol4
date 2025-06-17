@@ -1,6 +1,7 @@
 app-editors/laidout 9999: DTP, and experimental vector graphics tools
 app-misc/doublecmd 1.1.23: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
+app-misc/intellimouse-ctl 9999: CLI for Microsoft IntelliMouse
 dev-db/duckdb 0.10.0: DuckDB embedded database
 dev-db/freetds 0.95.95: Tabular Datastream Library
 dev-java/openwebstart-bin 1.7.0: Run Web Start based applications after the release of Java 11
@@ -24,6 +25,7 @@ net-libs/meanwhile 1.1.1: Meanwhile (Sametime protocol) library
 net-misc/rdesktop 9999: A Remote Desktop Protocol Client
 net-print/utax-ta-ppds 20140115: PPD description files and filter for UTAX and Triump-Adler (both based on Kyocera) printers
 net-proxy/dante 1.4.1-r1: A free socks4,5 and msproxy implementation
+net-vpn/openvpn 2.5.3: Robust and highly flexible tunneling application compatible with many OSes
 net-vpn/strongswan 5.8.1_rc1: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 sys-apps/v86d 0.1.10-r1: A daemon to run x86 code in an emulated environment
 www-plugins/pipelight 9999: Wine-based wrapper for running Windows plugins on POSIX systems
