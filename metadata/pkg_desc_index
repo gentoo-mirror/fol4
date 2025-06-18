@@ -1,3 +1,4 @@
+app-backup/btrfs-sxbackup 0.6.11: Incremental btrfs snapshot backups with push/pull support via SSH
 app-crypt/wdpassport-utils 9999: WD My Passport Drive Hardware Encryption Utility for Linux
 app-editors/laidout 9999: DTP, and experimental vector graphics tools
 app-misc/doublecmd 1.1.23: Cross Platform file manager.
@@ -9,6 +10,7 @@ dev-java/openwebstart-bin 1.7.0: Run Web Start based applications after the rele
 dev-libs/libmodbus 3.1.1: Modbus library which supports RTU communication over a serial line or a TCP link
 dev-perl/Email-Outlook-Message 0.919: Read Outlook .msg files
 dev-python/duckdb 0.10.0: DuckDB embedded database
+dev-python/fastapi 0.110.0: FastAPI framework, high performance, easy to learn, fast to code, ready for production
 dev-python/py_sg 9999: This is a fork of Dan Lenski's SCSI library, rewritten to be compatible with Python3
 dev-python/pyclarify 0.6.3 9999: PyClarify helps users of Clarify to easily read, write and manipulate data in Clarify.
 dev-python/pydantic 1.10.14: Data parsing and validation using Python type hints
@@ -31,6 +33,7 @@ net-proxy/dante 1.4.1-r1: A free socks4,5 and msproxy implementation
 net-vpn/openconnect-pulse-gui 9999: This script provides a wrapper around OpenConnect which allows a user to log in through a WebKitGTK2 window.
 net-vpn/openvpn 2.5.3: Robust and highly flexible tunneling application compatible with many OSes
 net-vpn/strongswan 5.8.1_rc1: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
+sys-apps/systemd 239-r1: System and service manager for Linux
 sys-apps/v86d 0.1.10-r1: A daemon to run x86 code in an emulated environment
 www-plugins/pipelight 9999: Wine-based wrapper for running Windows plugins on POSIX systems
 x11-libs/libva 2.6.0_pre1: Video Acceleration (VA) API for Linux
