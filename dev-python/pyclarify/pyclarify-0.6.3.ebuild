@@ -3,6 +3,7 @@
 # $Header: $
 
 EAPI=8
+DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{8..12} )
 RESTRICT="mirror"
 
@@ -14,7 +15,6 @@ if [[ ${PV} == "9999" ]] ; then
     EGIT_REPO_URI="https://github.com/clarify/${PN}.git"
 fi
 
-DISTUTILS_USE_PEP517=setuptools
 DESCRIPTION="PyClarify helps users of Clarify to easily read, write and manipulate data in Clarify."
 HOMEPAGE="https://github.com/clarify/pyclarify"
 RDEPEND="=dev-python/pydantic-2*[${PYTHON_USEDEP}]"
