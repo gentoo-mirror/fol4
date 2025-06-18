@@ -1,3 +1,4 @@
+app-crypt/wdpassport-utils 9999: WD My Passport Drive Hardware Encryption Utility for Linux
 app-editors/laidout 9999: DTP, and experimental vector graphics tools
 app-misc/doublecmd 1.1.23: Cross Platform file manager.
 app-misc/intel-undervolt 1.6: Undervolt Intel CPUs under Linux
@@ -8,6 +9,8 @@ dev-java/openwebstart-bin 1.7.0: Run Web Start based applications after the rele
 dev-libs/libmodbus 3.1.1: Modbus library which supports RTU communication over a serial line or a TCP link
 dev-perl/Email-Outlook-Message 0.919: Read Outlook .msg files
 dev-python/duckdb 0.10.0: DuckDB embedded database
+dev-python/py_sg 9999: This is a fork of Dan Lenski's SCSI library, rewritten to be compatible with Python3
+dev-python/pyclarify 0.6.3 9999: PyClarify helps users of Clarify to easily read, write and manipulate data in Clarify.
 dev-python/pydantic 1.10.14: Data parsing and validation using Python type hints
 games-util/evdev-joystick-calibration 9999: Reusable constraint types to use with typing.Annotated
 media-gfx/oda-file-converter 24.2.0.0: Converts files between the .dwg and .dxf file formats
@@ -25,6 +28,7 @@ net-libs/meanwhile 1.1.1: Meanwhile (Sametime protocol) library
 net-misc/rdesktop 9999: A Remote Desktop Protocol Client
 net-print/utax-ta-ppds 20140115: PPD description files and filter for UTAX and Triump-Adler (both based on Kyocera) printers
 net-proxy/dante 1.4.1-r1: A free socks4,5 and msproxy implementation
+net-vpn/openconnect-pulse-gui 9999: This script provides a wrapper around OpenConnect which allows a user to log in through a WebKitGTK2 window.
 net-vpn/openvpn 2.5.3: Robust and highly flexible tunneling application compatible with many OSes
 net-vpn/strongswan 5.8.1_rc1: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 sys-apps/v86d 0.1.10-r1: A daemon to run x86 code in an emulated environment
