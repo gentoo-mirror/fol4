@@ -5,10 +5,10 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{7,8,9,10,11,12} pypy3 )
 PYTHON_REQ_USE="threads(+)"
+DISTUTILS_USE_PEP517=hatchling
 
 inherit distutils-r1 pypi
 
-DISTUTILS_USE_PEP517=hatchling
 
 DESCRIPTION="FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 HOMEPAGE="https://fastapi.tiangolo.com/"
