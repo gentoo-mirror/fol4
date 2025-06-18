@@ -2,6 +2,7 @@
 # Distributed under the terms of the GNU General Public License v3
 
 EAPI=8
+DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python{3_8,3_9,3_10,3_11,3_12} )
 inherit distutils-r1 git-r3
 
