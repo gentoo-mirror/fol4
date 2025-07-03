@@ -30,7 +30,7 @@ net-libs/meanwhile 1.1.1: Meanwhile (Sametime protocol) library
 net-misc/rdesktop 9999: A Remote Desktop Protocol Client
 net-print/utax-ta-ppds 20140115: PPD description files and filter for UTAX and Triump-Adler (both based on Kyocera) printers
 net-proxy/dante 1.4.1-r1: A free socks4,5 and msproxy implementation
-net-vpn/openconnect-pulse-gui 9999: This script provides a wrapper around OpenConnect which allows a user to log in through a WebKitGTK2 window.
+net-vpn/openconnect-pulse-gui 1.0.3: Provides web-browser based authentication for openconnect to connect to Ivanti/Pulse Secure VPN services
 net-vpn/openvpn 2.5.3: Robust and highly flexible tunneling application compatible with many OSes
 net-vpn/strongswan 5.8.1_rc1: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 sys-apps/systemd 239-r1: System and service manager for Linux
