@@ -9,5 +9,5 @@ RDEPEND=dev-qt/qtcore x11-themes/hicolor-icon-theme
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://download.opendesign.com/guestfiles/Demo/ODAFileConverter_QT5_lnxX64_8.3dll_24.2.deb
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	multilib	b2a329026f2e404e9e371097dda47f96	desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	multilib	a199af442898963433d6f038a88cce9c	desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed
 _md5_=b108bb010de90662d31adcd76b22ff72
