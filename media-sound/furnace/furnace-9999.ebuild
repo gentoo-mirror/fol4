@@ -28,7 +28,7 @@ DEPEND="${RDEPEND}
 	media-libs/portaudio
 	media-libs/mesa
 	media-libs/rtmidi
-	media-sound/pipewire
+	media-video/pipewire
 	sci-libs/fftw
 	sys-libs/zlib
 "
